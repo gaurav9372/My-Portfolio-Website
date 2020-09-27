@@ -1,0 +1,15 @@
+.aos_offset_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(180,42,13,1);
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    position: fixed;
+    z-index: 99999999;
+    left:10px;
+    border-radius: 4px;
+    top: 80px;
+    color: #fff;
+} 

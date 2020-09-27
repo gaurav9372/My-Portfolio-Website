@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ol,ul,li{
+    margin:0px;
+    padding:0px;
+}
+
+button{
+    font-size: 1em;
+    padding: 0px;
+}
+  
+body{    
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-family:'Noto Sans', sans-serif;
+}
+
+#fonts{
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+}
+
+/*Navbar*/
+#navbarCont{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#navbar{
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#4EACE7;
+    width: 100%;
+    height: 100%;
+    transition: all 200ms;
+    overflow: hidden;
+}
+
+#logo{
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    color: #4EACE7;
+    color: #fff;
+    
+    font-size: 1.2em;
+    font-family: 'Pacifico', cursive;
+}
+#menuButt{
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    width: 60px;
+    height: 100%;
+    padding: 20px 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    flex-direction: column;
+}
+
+#menuButt:focus{
+    outline: 0px;
+    background-color: hsl(203, 56%, 51%);
+}
+
+#menuButt .bar{
+    background-color: #fff;
+    height: 2px;
+}
+.bar.bar1{
+    width: 20px;
+    animation: bar1 linear infinite 1000ms;
+}
+.bar.bar2{
+    width: 10px;
+    animation: bar2 linear infinite 800ms;
+}
+.bar.bar3{
+    width: 30px;
+    animation: bar3 linear infinite 700ms;
+}
+@keyframes bar1{
+    50%{
+       width: 40px; 
+    }
+}
+@keyframes bar2{
+    50%{
+       width: 40px; 
+    }
+}
+@keyframes bar3{
+    50%{
+       width: 40px; 
+    }
+}
+
+
+.menu{
+    display:none;
+    background-color:#4EACE7;
+    width: 140px;
+    position: fixed;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    right: 10px;
+    top: 80px;
+    z-index: 99;
+}
+
+.menu.active{
+    display: flex;
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: menuOpen 100ms linear forwards;
+}
+
+
+
+@keyframes menuOpen{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.menuItem{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    transition: 300ms all;
+    
+}
+
+.menuItem:hover{
+        background-color: hsl(203, 56%, 51%);
+    padding: 0px 0px 0px 10px;
+}
