@@ -1,0 +1,252 @@
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+    --pcolordarker:hsla(350,70%,30%,1);
+    --scolor:hsla(43,90%,50%,1);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+                   /*Global*/
+body,p,h1{
+    padding: 0px;
+    margin: 0px; 
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(140,30%,50%);
+}
+
+#mainFrame{
+    position: relative;
+    display: flex;
+    min-width: 370px;
+    width: 370px;
+    height: 550px;
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.wrapperRight{
+    height: 100%;
+    display: none;
+}
+
+.wrapperLeft{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+.header{
+    position: absolute;
+    top: -70px;
+    height: 200px;
+    display: flex;
+    width: 580px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--pcolor);
+    border-radius:50%;
+    padding-top: 60px;
+}
+
+.header h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+    margin: 0.7em 0em;
+    letter-spacing: 0.5px;
+}
+
+.header a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    height: 220px;
+    margin-top:165px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input{
+    width: 100%;
+    padding: 0px 0.8em;
+    border: 1px solid var(--pcolor);
+    border-radius: 18px;
+    height: 35px;
+    font-size: 0.9em;
+    background-color: #fff;
+    width: 100%;
+}
+
+form label{
+    position: absolute;
+    top:0px;
+    font-size: 0.9em;
+    padding: 0px 0.8em;
+    background-color: transparent;
+    
+    align-items: center;
+    display: flex;
+    margin-top: 0em;
+    margin-left: 0em;
+    height: 100%;
+    letter-spacing: 0.02em;
+    font-family: 'poppins',sans-serif;
+    transition: all 300ms ease;
+    
+}
+
+.focused{
+    font-size: 0.75em;
+    margin-left: 1em;
+    margin-top: -0.5em;
+    background-color: #fff;
+    height: 1.3em;
+    color:var(--pcolor);
+    letter-spacing: 0.05em;
+    padding: 0px 0.4em;
+/*    text-transform: uppercase;*/
+}
+
+form .textbox{
+    position: relative;
+}
+
+form input:focus{
+    outline: 0px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+form .w50{
+    width: 49%;   
+}
+form .w100{
+    width: 100%;
+}
+
+
+.caution{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 230px;
+    position: absolute;
+    bottom:-32px;
+    animation: caution 400ms ease forwards;
+    opacity:0;
+}
+
+@keyframes caution{
+    100%{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.caution img{
+    height: 0.9em;
+    width: 0.89em;
+    margin-right: 2px;
+    padding-bottom: 0px;
+}
+
+.caution p{
+    font-family: sans-serif;
+    font-size: 0.75em;
+    color: var(--pcolor);
+/*    background-color: aliceblue;*/
+/*    border:1px solid black;*/
+/*    padding: 3px;*/
+    border-radius: 4px;
+    
+    left: 0px;
+}
+
+
+form .button{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    height: 35px;
+    border-radius: 18px;
+    background-color: var(--pcolor);
+    color: #fff;
+    border: 0px;
+    width: 120px;
+}
+
+.button:hover{
+    border: 2px solid var(--pcolor); 
+    background-color: transparent;
+    color: var(--pcolor);
+}
+.button:focus{
+    outline: 0px;
+}
+
+
+#background{
+    background-image: url("cover.jpg");
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    background-size: cover;
+    background-position: 92% 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+@media only screen and (min-width: 700px) {
+    #mainFrame{
+    width: 90%;
+    max-width: 800px;
+    }
+    .wrapperRight{
+        display: flex;
+        flex: 1;
+    }
+    .wrapperLeft{
+    width: 370px;
+    }
+}

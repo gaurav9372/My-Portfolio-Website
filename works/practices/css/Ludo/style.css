@@ -1,0 +1,103 @@
+                    /*Resetting*/
+
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+/*   box-shadow: 0px 0px 0px 1px #999999;*/
+/*   border-radius: 3px;*/
+}
+
+                      /*Global*/
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    cursor: default;
+}
+
+body p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    display: grid;
+    width: 510px;
+    height: 510px;
+    background-color: grey;
+    grid-template-rows: 210px 90px 210px;
+    grid-template-columns: 210px 90px 210px;
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+.goal{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.paths{
+    display: grid;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 210px;
+    grid-template-columns: 30px 30px 30px;
+}
+
+.line{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 1px black;
+    background-color: blueviolet;
+    
+}
+.cbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.cbox .cbox1{
+    height: 80%;
+    width: 80%;
+    background-color: red;
+}
+.cbox .cbox2{
+    height: 80%;
+    width: 80%;
+    background-color: blue;
+}
+.cbox .cbox3{
+    height: 80%;
+    width: 80%;
+    background-color: green;
+}
+.cbox .cbox4{
+    height: 80%;
+    width: 80%;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/
+

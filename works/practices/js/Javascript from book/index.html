@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Learn JS</title>
+
+</head>
+
+<body class="body_section">
+<div class="background">
+
+<div class="block">
+<script src="calc.js"></script>
+<h3 class="heading">
+<a href="calc.js">Javascript Calculator</a>
+</h3>
+
+
+<div class="program">
+    <form class="calc" name="calc">
+    <div class="row m10 sa">
+        <input type="text" name="num1" class="textbox" id="num1" placeholder="Number 1">
+        <input type="text" name="num2" class="textbox" id="num2" placeholder="Number 2">
+    </div>
+    <div class="row m10 sb">
+        <button type="button" class="button" onclick="add()"> Add </button>
+        <button type="button" class="button" onclick="minus()"> Minus </button>
+        <button type="button" class="button" onclick="multiply()"> Multiply </button>
+        <button type="button" class="button" onclick="divide()"> Divide </button>
+    </div>
+    </form>
+</div>
+</div>
+
+<div class="block">
+<script src="array.js"></script>
+<h3 class="heading">
+<a href="array.js">Array</a>
+</h3>
+
+    <div class="program">
+        <div class="row m10">
+            <p id="color1">Click button to show result</p>
+        </div>
+        <div class="row m10">
+            <button type="button" class="button" onclick="preview()">Show</button>
+        </div>
+    </div>
+</div>
+
+<div class="block">
+<script src="MVF.js"></script>
+<h3 class="heading">
+<a href="MVF.js">Getting Multiple Values<br> out of a function</a>
+</h3>
+    <div class="program">
+    <form class="MVF" name="MVF">
+
+    <div class="row m10 sb">
+    
+        <input type="text" name="length" class="textbox" id="length" placeholder="Length">
+
+        <input type="text" name="breadth" class="textbox" id="breadth" placeholder="Breadth">
+
+        <input type="text" name="height" class="textbox" id="height" placeholder="Height">
+    </div>
+    
+    <div class="row m10">
+        
+        <button type="button" class="button big" onclick="calculate()">Find Area and volume</button>
+    </div>
+    </form>
+    </div>
+</div>
+
+<div class="block">
+<script src="object.js"></script>
+<h3 class="heading"><a href="object.js">Objects</a>
+</h3>
+
+    <div class="program">
+        <div class="row">
+            Hotel Name :
+            <div id="hotelname">Yerra</div>
+        </div>
+            
+        <div class="row">
+            Available Rooms :
+            <div id="rooms">28</div>
+        </div>
+
+        <div class="row m10">
+            <button type="button" class="button" onclick="change()">Change</button>
+        </div>
+    </div>
+</div>
+
+<div class="block">
+<script src="Bio.js"></script>
+<h3 class="heading">
+    <a href="Bio.js">Built in Objects</a>
+</h3>
+
+    <h4><i>Browser Object model</i></h4>
+    
+    <div class="program">
+        
+    <div id="data" class="row m10">
+
+        Window Width : <br>
+        Window Height : <br>
+
+        Page X offset : <br>
+        Page Y offset : <br>
+
+        ScreenX : <br>
+        ScreenY : <br>
+
+        window History : <br>
+        window History Length : <br>
+
+        Screen Width : <br>
+        Screen Height : <br>
+
+    </div>
+    <div class="row m10">
+        <button type="button" class="button" onclick="showinfo()">Show Info</button>
+    </div>
+    </div>
+    <h4><i>Document Object model</i></h4>
+    <h4><i>Global Javascript Objects</i></h4>
+
+</div>
+
+<div class="block">
+<script src="Date and time.js"></script>
+<h3 class="heading">
+<a href="Date and time.js">Date and Time</a>
+</h3>
+    <div class="program">
+        <div class="row">
+            <p id="date"> Date </p>
+        </div>
+        
+        <div class="row">
+            <p id="time"> Time </p>
+        </div>
+        
+        <div class="row m10">
+        <button type="button" class="button big" onclick="dateandtime()">Show Date and Time</button>
+        </div>
+    </div>
+</div>
+
+<div class="block">
+<script src="logic.js"></script>
+<h3 class="heading">
+<a href="Logic.js">Logic AND , OR , NOT</a>
+</h3>
+
+<div class="program">
+<div class="row m10">
+
+        <div class="w50">
+            <p>Equation 1</p>
+            <p style="border:1px solid #999999;padding: 5px;margin:5px;">
+            3 > 6
+            </p>
+            <p class="false">(False)</p>
+        </div>
+        
+        <div class="bar"></div>
+        
+        <div class="w50">
+            <p>Equation 2</p>
+            <p style="border:1px solid #999999;padding: 5px;margin:5px;">
+            3 > 1 
+            </p>
+            <p class="true">(True)</p>
+        </div>
+
+    </div>
+
+    <div class="row m10">
+
+        <div class="w33">
+        <p><u><i>AND</i></u></p>
+            <div class="true">True</div> &&
+            <div class="true">True</div>
+        </div>
+
+        <div class="bar"></div>
+        
+        <div class="w33">
+        <p><u><i>OR</i></u></p>
+        </div>
+        
+        <div class="bar"></div>
+        
+        <div class="w33">
+        <p><u><i>NOT</i></u></p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <button type="button" class="button" onclick="check()">Check</button>
+    </div>
+    
+</div>
+</div>
+
+<div class="block">
+<script src="loop.js"></script>
+<h3 class="heading"><a href="loop.js">Loop</a>
+</h3>
+
+    <div class="program">
+        <div class="row">
+            <div id="count">
+            The code shows here
+            </div>
+        </div>
+            
+        
+        <div class="row m10">
+            <button type="button" class="button" onclick="count()">Print</button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</body>
+
+</html>

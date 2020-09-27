@@ -1,0 +1,125 @@
+<html>
+<head><title>Functions,array and strings</title></head>
+<body>
+<p style="color:red;font-size:20px;">1. Operations on variables and getting data type:</p>	
+	<?php 
+	$x=5;
+	$y=28;
+	$sum= $x+$y;
+	echo "answer is $sum and the type is ";
+	echo gettype($x)."<br>";
+	echo " the value of x is $x "."<br>" ;
+	echo " the value of x is ".$x;
+	?>
+<p style="color:red;font-size:20px;">2. Concatenation:</p>
+	<?php
+	$x="Gaurav";
+	$y=" Gupta";
+	$z = $x . $y;
+	echo $z;
+	?>
+
+<p style="color:red;font-size:20px;">3. Functions:</p>
+	<?php
+	function multiplication($num1=4,$num2=4,$num3=4)
+	//here all the 3 nums are set default to 4 in case later if the any num are unassigned//
+		{
+			$answer=$num1*$num2*$num3;
+			return $answer;
+		}
+	?>
+	<?php
+	$x=5;
+	$y=10;
+	$z=2;
+	$answer1 = multiplication($x,$y,$z);
+	echo "answer is ".$answer1."<br>";
+
+	$answer2 = multiplication($x,$y);
+	echo "answer is ".$answer2; //here the 3rd num is not assigned so it is called from default value//
+	?>
+
+<p style="color:red;font-size:20px;">4. Array and sizeof()/count() function:</p>
+<?php
+	$nums=array(12,15);/*index 0 and 1*/
+	$sum=$nums[0]+$nums[1]; //numbers are called on the basis of index value//
+	echo "answer is ".$sum."<br>";
+	echo "the size of array is ".sizeof($nums); //We can also use count() function//
+?>
+
+<p style="color:red;font-size:20px;">4. Associative array:</p>
+<?php
+	$nums=array("num1"=> 12,"num2"=> 15);//associated value//
+	$sum=$nums["num1"]+$nums["num2"]; //calling the associated values//
+	echo "answer is ".$sum."<br>";
+?>
+
+<p style="color:red;font-size:20px;">5. Multi-dimentional array(2D):</p>
+<table>
+	<tr>
+	<td style="width:10px";></td>	
+	<td style="width:10px";>0</td>
+	<td style="width:10px";>1</td>
+	</tr>
+	<tr>
+	<td>0</td>	
+	<td style="border:1px solid black;">10</td>
+	<td style="border:1px solid black;">5</td>
+	</tr>
+	<tr>
+	<td>1</td>	
+	<td style="border:1px solid black;">2</td>
+	<td style="border:1px solid black;">4</td>
+	</tr>	
+</table><br>	
+
+<?php
+	$nums=array(array(10/*(0,0)*/,5/*(0,1)*/),array(2/*(1,0)*/,4/*(1,1)*/));//array inside array//
+	$sum=$nums[0][0]+$nums[0][1]; //calling indices//
+	echo "sum of [0][0] and [0][1] = ".$sum."<br>";
+
+	$sum=$nums[1][0]+$nums[1][1]; 
+	echo "answer = ".$sum."<br>";
+
+	$sum=$nums[0][0]+$nums[1][1]; 
+	echo "answer = ".$sum."<br>";
+
+	$sum=$nums[1][0]+$nums[0][1]; 
+	echo "answer = ".$sum."<br><br>";
+
+	$sum=$nums[0][0]+$nums[0][1]+$nums[1][0]+$nums[1][1]; 
+	echo "asum of all numbers= ".$sum."<br><br>";
+?>
+<p style="color: blue"> Note : the array moves to row and then to column in order.</p>
+
+<p style="color:red;font-size:20px;">6. String:</p>
+
+<?php
+
+echo 'i am a "string"'."<br>"; //helps in displaying double qoutes// 
+
+echo "<p><u><strong>Double qoutes VS single qoutes:</strong></u></p>";
+
+$num=6;
+echo 'The number is $num. '."<u> Single qoutes print exactly the same</u>"."<br>";
+echo "The number is $num."."<br>"; 
+
+echo "<p><u><strong>String length - strlen() function:</strong></u></p>";
+$x = "This is a sentence"."<br>";
+echo "the lenght is ".strlen($x);
+
+echo "<p><u><strong>String reverse - strrev() function:</strong></u></p>";
+$x = "This is a sentence";
+echo $x;
+echo "<br>";
+echo "<u>the reverse is :</u> ".strrev($x);
+
+echo "<p><u><strong>Other string functions are:</strong></u></p>";
+echo "1.strtolower"."<br>";
+echo "2.strtoupper"."<br>";
+echo "3.strpos";
+
+?>
+
+</body>
+</html>

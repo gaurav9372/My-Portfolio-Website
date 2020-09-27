@@ -1,0 +1,91 @@
+/*Resetting*/
+*{
+    box-sizing: border-box;
+
+}
+
+
+ 
+/*Global*/
+
+body,p{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Flex */
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vertical{
+    flex-direction: column;
+}
+
+
+
+
+/*components*/
+.butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: rgb(210,210,210);
+    transition: 150ms ease;
+}
+.butt:hover{
+    box-shadow:inset 0px 0px 1px 1px rgba(0,0,0,0.5);
+}
+.butt:focus{
+    outline: 0px;
+    background-color: rgb(190,190,190);
+}
+
+.thumbnail{
+    
+    width: 150px;
+    display: flex;
+    height: 150px;
+    background-color: rgba(0,0,0,0.04);
+    border:1px solid rgba(0,0,0,0.2);
+}
+
+/* Layout*/
+
+.w100{
+    width:100%;
+    flex-wrap: wrap;
+}
+.fullscreen{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*effects*/
+.round{
+    border-radius: 5px;
+}
+.shadow{
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+}
+.dark{
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+
+/*debug*/
+.test{
+    box-shadow: 0px 0px 1px 1px red;
+}
+
+
+.thumb{
+    margin: 20px;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link   rel="stylesheet"
+            type="text/css"  
+            href="style.css">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Help Service</title>
+</head>
+ 
+<body>
+    
+    
+        <button type="button" id="helpButton" onclick="openChatUI()">
+            
+        
+            <p>Help</p>
+            
+            <img src="images/help.svg">
+                
+        
+        </button>
+   
+
+    <div id="mainframe">
+        <div id="header">
+            
+            <div id="illustration">
+                <img src="images/headset.svg" style="width: 100%;height: 100%;">
+            </div>
+            
+            <button id="close" type="button" onclick="closeChatUI()">
+                <img src="images/other.svg" style="width:100%;height:100%;">
+            </button>
+            
+            <div id="helloUserCont">
+                <p>Hello Rithvik</p>
+            </div>
+            <div id="extraText">
+                <p>Let us help you with your queries.</p>
+            </div>
+        </div>
+        
+        
+        <div id="content">
+        
+        <div class="dialogBoxBot">Hello friend , what is your name ?</div>
+            
+        <div class="dialogBoxUser">Shreyansh</div>    
+            
+        </div>
+        
+        <div id="footer">
+            <div id="textboxCont">
+                <div id="writeIcon">
+                <img src="images/pencil.svg" style="width:100%;height: 100%">
+                </div>
+                
+                <input type="text" placeholder="Type here">
+            </div>
+            
+                <button id="sendButton" type="button">
+                <img src="images/send.svg" style="width: 100%;height: 100%;">
+                </button>
+        
+        </div>
+    </div>
+
+<script src="xyz.js"></script>  
+</body>
+</html>

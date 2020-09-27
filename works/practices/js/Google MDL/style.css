@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+
+body,p{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+ 
+header{
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+ul{
+    padding:0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.component{
+    width: 100%px;
+    
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.component p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    background-color: crimson;
+    margin: 0px;
+    padding: 0px;color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+/*    padding: 0px 30px;*/
+    justify-content: space-evenly;
+     align-content: flex-start;
+}
+
+
+.fullblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    border: 1px solid crimson;
+    height: 700px;
+    padding: 20px;
+}
+
+
+
+.block{
+    overflow: hidden;
+    display: flex;
+
+    min-width: 180px;
+    min-height: 180px;
+    
+    flex-direction: column;
+    border:1px solid rgba(0,0,0,0.2);
+   
+    border-radius: 6px;
+    margin: 20px 20px;
+}
+
+
+.content{
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caption{
+    text-align: center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 39px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.05);
+    line-height: 1.2rem;
+    padding: 5px;
+    margin: 0px;
+/*    border-radius: 4px;*/
+}
+
+.b2{
+    width: 450px;
+    max-width: 500px;
+}
+
+
+.b3{
+    width: 400px;
+    height: 400px;
+}
+
+
+/*Wide Card*/
+
+.demo-card-wide.mdl-card {
+  width: 80%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 220px;
+  background: url('images/cover.jpg') center / cover;
+    background-repeat: no-repeat;
+}
+.mdl-card__supporting-text{
+    width: 100% !important;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+/*Square Card*/
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('images/cover.jpg')
+      center / cover;
+    background-repeat: no-repeat;
+}
+
+/*Image Card*/
+
+.demo-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('images/cover.jpg') center / cover;
+}
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/*Custom card*/
+
+.card-square{
+    width: 00px;
+}
+
+
+
+/*Transparent Header*/
+
+.mdl-cover-bg{
+    background: url('images/cover.jpg') center / cover;
+}
+
+.demo-layout-transparent {
+  background: url('images/cover.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: #fff;
+}
+
+
+/*Waterfall haeder*/
+
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+
+
+/*Grid*/
+
+.gridblock{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.mdl-grid{
+    background-color: azure;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.mdl-cell{
+    background-color: wheat;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.3);
+}

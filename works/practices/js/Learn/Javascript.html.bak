@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+  <head>
+  	 <link rel="stylesheet" type="text/css" href="javascript.css">
+    <meta charset="utf-8">
+    <title>Javasrcript</title>
+  </head>
+<body>
+
+<div class="topic">
+<h1>Javascript</h1>
+</div>
+
+<main>
+<div class="card">
+    <div class="heading">
+    	To print greeting as per time:
+    </div>
+
+    <div class="output">
+    	<script src="greet.js"></script>
+    </div>
+
+    <div>
+    <a href="greet.js" class="link">Open Code</a>
+    </div>
+</div>
+
+<div class="card">
+	<div class="heading">
+    	To take input and show age:
+    </div>
+
+    <div class="output">
+    	
+    	<input id="name" type="text" name="name" placeholder="Input your name"><br />
+
+    	<input id="byear" type="byear" name="birthyear" placeholder="Input your birthyear"><br />
+
+    	<button onclick="calculate()">
+    	Calculate
+    	</button>
+
+    	<script src="age.js"></script>
+    	<p id="result"></p>
+    	
+    </div>
+
+    <div>
+    <a href="age.js" class="link">Open Code</a>
+    </div>   
+</div>
+
+<div class="card">
+    <div class="heading">
+  	XYZ
+    </div>
+
+    <div class="output">
+    <script src="xyz.js"></script>
+    </div>
+
+    <div>
+    <a href="xyz.js" class="link">Open Code</a>
+    </div>
+</div>
+
+</main>
+</body>
+</html>

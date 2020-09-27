@@ -1,0 +1,76 @@
+body,p,h1,h2,h3,h4,h5,h6{
+font-family: 'Cabin', sans-serif;
+} 
+
+#memoNavbar{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    z-index: 999;
+    padding: 0px;
+}
+#memoNavbar .back{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 70px;
+    cursor: pointer;
+}
+#memoNavbar .back:hover{
+   background-color:#F7F7F7;
+}
+#memoNavbar .menuButton{
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    cursor: pointer;  
+}
+#memoNavbar .menuButton:hover{
+background-color:#F7F7F7;
+}
+#screen-Memo1{
+    padding: 70px 20px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff; 
+}
+#titleBar-Memo1{
+    height: 4em;
+    display: flex;
+    align-items: center;
+}
+#title-Memo1{
+    font-size: 2em;
+    font-family: 'Sniglet',cursive; 
+    color: var(--pcolor);
+
+}
+#content-Memo1{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    font-size: 1em;
+}
+
+
+
+ 
+@media all and (min-width: 600px){
+
+}
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}

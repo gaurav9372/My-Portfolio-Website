@@ -1,0 +1,241 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+body,p,h1,h2,h3,h4,h5,h6{
+font-family: 'Cabin', sans-serif;
+} 
+  
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#priNavbar {
+    display: flex;
+    height: 70px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    
+}
+#secNavbar{
+    height: 50px;
+    background: var(--pcolor);
+    padding: 0px 20px;
+}
+
+
+.menu_item:hover{
+    background-color: var(--pcolordark);
+}
+
+#priNavbar #logo{
+   
+/*    width: calc(100% - 70px);*/
+    width: 175px;
+    font-size: 35px;
+    font-family: 'Sniglet',cursive; 
+    color: var(--pcolor);
+    margin-left: 20px;
+}
+
+#priNavbar #menuButton:hover{
+    background-color:#F7F7F7;
+}
+
+#secNavbar #date{
+    font-size: 1em;
+    color:#fff;
+    
+}
+#secNavbar #toggleView{
+    height: 16px;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggleView button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 14px;
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    cursor: pointer;
+}
+#toggleView #panelsView{
+     
+}
+#toggleView #cardsView{
+    
+}
+
+
+#screen{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    width: 100%;
+    grid-template-columns: 40% 40%;
+    grid-template-rows:200px 200px;
+
+    place-items:center;
+    place-content:space-evenly;
+    
+/*    background-color:  var(--pcolor);*/
+/*        background-color: #fff;*/
+
+}
+.memo{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius:5px;
+    border:0px ;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    cursor: pointer;
+    box-shadow:0px 0px 5px hsla(230, 19%, 23%,0.3); 
+    transition: 400ms all;
+    background-color:#fff;
+    
+    
+}
+
+.memo:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 7px hsla(230, 19%, 23%,0.1)
+}
+.memo .titleBar{
+    height: 2.4em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.memo .titleBar .title{
+    font-size: 1.2em;
+    font-family: 'Sniglet',cursive; 
+}
+.memo .content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    
+}
+
+#screen #newMemo{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 70px;
+    right: 50px;
+    border-radius: 50%;
+    background: var(--scolor);
+    border: 0px;
+    box-shadow: 0px 0px 50px 0px rgba(61,66,92,0.2); 
+    cursor: pointer;
+    z-index: 999;
+}
+#screen #newMemo:hover{
+    transform: scale(1.05);
+}
+
+/*Javascript*/
+
+#menu{
+    display: none;
+    position: relative;
+    height: 180px;
+    background-color: var(--pcolor);
+    width: 100%;
+    flex-direction: column;
+    z-index: 3;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
+}
+.menu_item{
+    display: flex;
+    position: relative;
+    padding: 0px 40px;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+}
+#priNavbar #menuButton{
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    cursor: pointer; 
+    transition: 400ms all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media all and (min-width: 600px){
+    
+    #priNavbar #menuButton{
+        display: none;
+    }
+    
+    #menu{
+        display: flex;
+        height: 100%;
+        width: 360px;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+         
+    }
+    
+    .menu_item{
+    height: 40px;
+    margin-right:20px;
+    width: 100px;
+    display: flex;
+    border-radius: 4px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+    
+}
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}

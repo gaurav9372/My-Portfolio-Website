@@ -1,0 +1,224 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+    background-color: var(--pcolor);
+}
+
+body,p,h1,h2,h3,h4,h5,h6{
+font-family: 'Cabin', sans-serif;
+}
+
+#background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, var(--pcolor), hsla(249, 80%, 55%,10%)), url("../resources/images/signup.jpg");
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+ 
+#logo{
+    height: 200px;
+/*    background-color: red;*/
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#logo #logo_title{
+    font-size: 3em;
+    position: relative;
+    font-family: 'Sniglet',cursive;
+    color: #fff;
+}
+/*Javascript*/
+
+.f_container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    background-color: #fff;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 60px 0px hsla(0, 0%, 0%,0.3);
+    border-radius: 3px;
+}
+
+#heading{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 1em;
+    font-size: 1em;
+    color: #fff;
+    
+}
+
+
+.row{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+/*    background-color: grey;*/
+    margin-bottom: 1.5em;
+}
+.row p{
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 0.3em;
+}
+
+.f_textbox{
+    position: relative;
+    width: 100%;
+    height: 2.5em;
+    font-size: 0.9em;
+    padding: 0px 0.4em;
+    border: 0px solid var(--pcolor);
+    border-radius: 2px;
+    background-color: #F5f5f5;
+    
+}
+
+.f_textbox:focus{
+    background-color: #fff;
+}
+form label{
+    position: absolute;
+    top:0px;
+    font-size: 0.9em;
+    padding: 0px 0.4em;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    margin-top: 0em;
+    margin-left: 0em;
+    height: 100%;
+    z-index: 2;
+    transition: all 300ms ease;
+    
+}
+.focused{
+    font-size: 0.7em;
+    margin-left: 0.7em;
+    margin-top: -0.7em;
+    background-color: #fff;
+    height: 1.4em;
+    color:var(--pcolor);
+    letter-spacing: 0.05em;
+    padding: 0px 0.5em;
+/*    text-transform: uppercase;*/
+}
+
+.f_textbox:focus{
+    outline: 0px;
+    border: 1px solid var(--pcolor);
+}
+
+ 
+#extraRow{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2em;
+    font-size: 0.9em;
+}
+#extraRow p{
+    margin-left: 5px;
+    
+}
+
+#buttonCont{
+    display: flex;
+    height: 2.5em;
+    width: 100%;
+    margin-top: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+#buttonCont input{
+    display: flex;
+    border: 0px;
+    height: 2.5em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--scolor);
+    color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    
+}
+
+#buttonCont input:hover{
+   background-color:  hsl(151, 57%, 47%);
+}
+
+#foot_text{
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: #F6F6F6;
+    font-size: 1em;
+    
+}
+
+#foot_text a{
+    color: #fff;
+    margin-left: 0.41em;
+    font-weight: bold;
+    
+    text-decoration: none;
+}
+
+#credit {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    height: 1em;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#credit a{
+    font-size: 0.8em;
+    color: #aeaaff;
+    text-decoration: none;
+}
+
+@media all and (min-width: 600px){
+
+}
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}

@@ -1,0 +1,167 @@
+body{
+    padding: 0px;
+    margin: 0px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.background {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+    border: 0px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    background-color: #fff;
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.subtitle{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size:1rem;
+    color: white;
+}
+.info{
+    flex: 1;
+    line-height: 1.4;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0.1);
+    font-size:0.9rem;
+}
+.info p{
+    font-family: roboto,sans-serif;
+    margin: 10px;
+}
+.back_info{
+    align-self: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    color: #fff;
+}
+
+/*B1*/
+
+.B1{
+    position: relative;
+    background-color: red;
+}
+.block_B1{
+    position: absolute;
+    top:30px;
+    left: 60px;
+    bottom: 30px;  /* Doesnt work*/
+    right: 10px; /* Doesnt work*/
+}
+.block_B1 .subtitle{
+    background-color: green;
+}
+
+.C1{
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
+
+/*B2*/
+
+.B2{
+    position: relative;
+    background-color: darkviolet;
+}
+.block_B2{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 0px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 15px black;
+    position: relative;
+    background-color: yellow;
+}
+
+.block_B2::after{
+    position: relative;
+    content: "circle is set to relative";
+    color: aliceblue;
+    left: 170px;
+    top: 180px;
+}
+.block_B2 .subtitle{
+    background-color: green;
+}
+
+.C2{
+    z-index: -0;
+/*    position: relative;*/
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
+/*B3*/
+.B3{
+    position: relative;
+    background-color: red;
+}
+.block_B3{
+    position: relative;
+    top:40px;
+    left: 20px;
+ 
+}
+.block_B3 .subtitle{
+    background-color: green;
+}
+
+.C3{
+/*    position: absolute;*/
+    z-index: -0;
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
+/*B4*/
+
+.B4{
+    position: absolute;
+    background-color: darkviolet;
+}
+.block_B4{
+    position: absolute;
+    top:50px;
+    left: 20px;
+ 
+}
+.block_B4 .subtitle{
+    background-color: green;
+}
+
+.C4{
+    position: relative;
+    z-index: -0;
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
+
+/
