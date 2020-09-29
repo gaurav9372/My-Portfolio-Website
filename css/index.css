@@ -48,7 +48,7 @@
 #aboutSection{
     position: relative;
     display: flex;
-    height:350px;
+    height:300px;
     width: 100%;
     background-color: #323232;
     justify-content: center;
@@ -57,36 +57,42 @@
 }
 #aboutSection .splits{
     display: flex;
-    height: 270px;
-    align-items: center;
+    padding-top: 40px;
+    height: 100%;
+    align-items: flex-start;
 }
+
 #aboutSection .left{
     width: 150px;
     justify-content: center;
 }
+
 #aboutSection .right{
+    flex-direction: column;
     flex: 1;
-    justify-content: flex-start;
 }
-#aboutSection .center{
-    width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    height: 80px;
-}
+
 #proPic{
     width:100px;
     border-radius: 4px;
     overflow: hidden;
-    height:100px;
+    height:130px;
+    background-image: url("../images/me.jpg");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position:50% 20%;
     box-shadow: 29px 20px 20px 0px rgba(0,0,0,0.25);
+    border: 0px;
+    transform: scaleX(-1);
 }
+
 #shortInfo{
     display: flex;
     color:#fff;
 }
 #name{
-     color: #4EACE7; 
+     color: #FCAD8C;
+    font-weight: bold;
 }
 #knowButt{
     height: 40px;
@@ -98,6 +104,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: 300ms all;
+    margin-top: 40px;
 }
 #knowButt:focus{
     outline: 0px;  
@@ -192,8 +199,8 @@ color: #4EACE7;
     height: 35px;
 }
 #rombusCover{
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     transform: rotate(45deg);
     border-radius: 30px;
     overflow: hidden;
@@ -392,6 +399,7 @@ color: #4EACE7;
     border:0px;
     border-radius: 4px;
     width: 100%;
+    font-family:'Noto Sans', sans-serif;
 } 
 #formCont textarea{
     height:  96px;
@@ -400,6 +408,7 @@ color: #4EACE7;
     border:0px;
     border-radius: 4px;
     width: 100%;
+    font-family:'Noto Sans', sans-serif;
 }
 #formCont input:focus{
     outline: 0px;

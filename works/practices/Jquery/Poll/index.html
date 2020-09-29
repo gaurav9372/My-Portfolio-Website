@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+     
+    <link href="https://fonts.googleapis.com/css2?
+    family=Montserrat:wght@300;400;600
+    &family=Bebas+Neue
+    &display=swap" rel="stylesheet">
+    
+    <link   rel="stylesheet"
+            type="text/css"  
+            href="resources/style.css">
+    <title>Poll</title>
+</head>
+
+<body>
+
+    <div id="main">
+    <div class="row"> 
+    <div id="header"> Total clicks 
+        <p id="totalCount"> 0</p>
+    </div>
+    </div>
+    
+    <div class="row"> 
+        <button class="options" id="option1">
+            Option 1
+        </button>
+        
+        <button class="options"  id="option2">
+            Option 2
+        </button>
+   </div>
+        
+    <div class="row"> 
+        
+    <p class="perc" id="bar1perc">0%</p>
+        
+    <div id="Cont">
+        <div class="bar" id="bar1">
+            
+        </div>  
+    
+        <div class="bar" id="bar2">
+
+        </div>  
+    </div>
+    
+    <p class="perc" id="bar2perc">0%</p>
+
+    </div>   
+
+    <div class="row"> 
+        <p class="barCounter" id="bar1Count">0</p>
+        
+        <p class="barCounter" id="bar2Count">0</p>
+   </div>
+    
+    </div>
+    <div id="note">
+        I made the separate buttons for options because it's not server sided poll and so when an user clicks an option , the bar would take 100% width and clicking option 2 was not possible.
+    </div>
+    
+<script src="resources/jquery-3.5.1.js"></script>
+<script src="resources/script.js"></script>  
+</body>
+</html>
