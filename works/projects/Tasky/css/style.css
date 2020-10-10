@@ -1,0 +1,257 @@
+:root{
+    --accColor:#F88762;
+}
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    font-size: 1em;
+
+    background-color: #F0F0F0;
+}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button{
+    padding: 0px;
+    margin: 0px;
+}
+input{
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Main*/
+
+nav{
+  display: flex;
+    position: fixed;
+    top: 0px;
+    padding:0px 20px;
+    height: 60px;
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.25);
+}
+#logo{
+    font-size: 2em;
+    color: var(--accColor); 
+}
+
+#frontSection{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 90px 10px 0px;
+    
+}
+
+#settings{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 12px;
+}
+#settings p{
+    margin: 0px 3px;
+} 
+
+#groups{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 7px 0px; 
+    overflow: hidden;
+    transition: 300ms all;
+}
+
+.groupHeader{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+/*    background-color: aqua;*/
+}
+.groupTitle{
+    font-size: 20px;
+
+}
+.arrowIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+}
+.arrowIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+.groupContent{
+    padding: 5px 20px; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 200ms ease;
+    background-color: #F88762;
+}
+
+.groupContent.active{
+    display: flex;
+}
+
+.task{
+    display: flex;
+    margin: 2.5px 10px;
+    height: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.task p{
+color: #fff;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+
+.task.new{
+    cursor: pointer;
+}
+
+.task.new img{
+    width: 14px;
+    height: 14px;
+} 
+
+.task.new p{
+    color: #fff;
+} 
+
+.newGroup{
+    flex-direction: row;
+    border: 1px solid var(--accColor);
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clickSwap{
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.beforeClick{
+}
+.afterClick{
+}
+
+.beforeClick.active{
+    display: flex;
+}
+.afterClick.active{
+    display: flex;
+}
+
+.beforeClick:hover{
+    background-color: hsla(60, 0%, 0%,0.6);
+}
+
+.addGroupIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height:18px;
+}
+.addGroupIcon img{
+    width: 100%;
+    height: 100%;
+} 
+#newGroupTitle{
+    font-size:20px;
+    color: var(--accColor);
+    margin-left: 8px;
+}
+
+
+#newGroupName{
+    border: 0px;
+    font-size: 16px;
+    flex: 1;
+    border-radius: 2px;
+    padding: 0px 20px;
+    height: 100%;
+    font-family: "poppins", sans-serif; 
+}
+#newGroupName:focus{
+    outline: 0px;
+}
+#doneButton{
+    border: 0px;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 80px;
+    background-color: transparent;
+    color: var(--accColor);
+    height: 100%;
+/*    margin-left: 10px;*/
+}
+#doneButton:hover{
+    background-color: hsla(15, 91%, 68%,0.15);
+}
+#doneButton:focus{
+    outline: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+}
+
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}
+
+
+

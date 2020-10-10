@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+     
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400
+    &display=swap" rel="stylesheet">
+    
+    <link   rel="stylesheet"
+            type="text/css"  
+            href="css/style.css">
+    <title>Tasky</title>
+</head>
+
+<body>
+
+<nav>
+      <div id="logo">Tasky</div>
+</nav>
+       
+<section id="frontSection">
+    
+    <div id="settings">
+            <p>Sort by</p>  
+            <p>Date</p>  
+    </div>
+    
+    <div id="groups">
+            
+            <div class="group">
+                
+                <div class="groupHeader">
+                    <p class="groupTitle">
+                    Cats
+                    </p>
+                    
+                    <div class="arrowIcon">
+                    <img src="resources/Icons/arrow.svg">
+                    </div>
+                </div>
+                
+                <div class="groupContent ">
+                    <div class="task task1">
+                        <input type="checkbox">
+                        <p>Task 1</p>
+                    </div>
+                    
+                    <div class="task new">
+                    <img src="resources/Icons/addTask - White.svg">
+                        <p>New Task</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+<!--
+            <div class="group group2"> 
+               
+                <div class="groupHeader">
+                <p class="groupTitle">
+                    Questions
+                </p>
+                <div class="arrowIcon">
+                <img src="resources/Icons/arrow.svg">
+                </div>
+                </div>
+                
+                <div class="groupContent">
+                    
+                    <div class="task new">
+                    <img src="resources/Icons/addTask.svg">
+                        <p>New Task</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+-->
+            <div class="group newGroup">
+                
+                <div class="clickSwap beforeClick active">
+                
+                    <div class="addGroupIcon">
+                    <img src="resources/Icons/addGroup.svg">
+                    </div>
+                
+                    <p id="newGroupTitle">
+                    New Group
+                    </p>
+                    
+                </div>
+                
+                <div class="clickSwap afterClick ">
+                    
+                    <input type="text" name="newGroupName" id="newGroupName" placeholder="Enter group name">
+                
+                    <button type="button" id="doneButton">
+                   Done 
+                    </button>
+                </div>
+            </div>
+                   
+    </div>      
+</section>
+    
+    
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/script.js"></script>
+    
+</body>
+</html>
