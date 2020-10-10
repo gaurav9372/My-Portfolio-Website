@@ -4,7 +4,8 @@ $(document).ready(function(){
 $(function openGroup(){
 $(".groupHeader").click(function(){
     
-    $(this).next().toggleClass("active");
+$(this).next().toggleClass("active");
+$(this).find(".arrowIcon").toggleClass("active");
     
 });
 });
@@ -40,7 +41,7 @@ $(".newGroup").before(newGroup);
 $("#newGroupName").val("");
         }
 else{
-    alert("Enter Group name please");
+    alert("Enter group name please");
 };
         
 $(".afterClick").removeClass("active");

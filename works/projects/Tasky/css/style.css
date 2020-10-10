@@ -57,7 +57,7 @@ nav{
     justify-content: flex-start;
     align-items: center;
     padding: 0px 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
 #settings p{
     margin: 0px 3px;
@@ -92,9 +92,11 @@ nav{
 /*    background-color: aqua;*/
 }
 .groupTitle{
-    font-size: 20px;
-
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
 }
+
 .arrowIcon{
     display: flex;
     justify-content: center;
@@ -102,13 +104,19 @@ nav{
     width: 16px;
     height: 16px;
 }
+
+.arrowIcon.active{
+    transform: rotate(180deg);
+    transition: 300ms all;
+}
+
 .arrowIcon img{
     width: 100%;
     height: 100%;
 }
 
 .groupContent{
-    padding: 5px 20px; 
+    padding: 5px 30px; 
     display: none;
     justify-content: center;
     align-items: center;
@@ -123,7 +131,7 @@ nav{
 
 .task{
     display: flex;
-    margin: 2.5px 10px;
+    margin: 3px 0px;
     height: 32px;
     justify-content: flex-start;
     align-items: center;
@@ -131,7 +139,7 @@ nav{
 }
 .task p{
 color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 8px;
 }
 
@@ -141,8 +149,8 @@ color: #fff;
 }
 
 .task.new img{
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
 } 
 
 .task.new p{
@@ -198,7 +206,7 @@ color: #fff;
     height: 100%;
 } 
 #newGroupTitle{
-    font-size:20px;
+    font-size:18px;
     color: var(--accColor);
     margin-left: 8px;
 }
