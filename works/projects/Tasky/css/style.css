@@ -20,6 +20,9 @@ input{
     padding: 0px;
     margin: 0px;
 }
+button:focus{
+    outline: 0px;
+}
 
 /*Main*/
 
@@ -82,18 +85,41 @@ nav{
     transition: 300ms all;
 }
 
+.groupContent{
+    padding: 10px 30px; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 200ms ease;
+    background-color: #F88762;
+}
+    display: flex;
+    margin: 4px 0px;
+    height: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
 .groupHeader{
     display: flex;
     width: 100%;
     height: 50px;
-    justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-/*    background-color: aqua;*/
 }
+
 .groupTitle{
     font-size: 18px;
     width: 100%;
+    overflow: hidden;
+}
+.taskTitle{
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 8px;
     overflow: hidden;
 }
 
@@ -104,58 +130,34 @@ nav{
     width: 16px;
     height: 16px;
 }
-
-.arrowIcon.active{
-    transform: rotate(180deg);
-    transition: 300ms all;
-}
-
 .arrowIcon img{
     width: 100%;
     height: 100%;
 }
 
-.groupContent{
-    padding: 5px 30px; 
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 200ms ease;
-    background-color: #F88762;
+.arrowIcon.active{
+    transform: rotate(180deg);
+    transition: 300ms all;
 }
-
 .groupContent.active{
     display: flex;
 }
 
-.task{
-    display: flex;
-    margin: 3px 0px;
-    height: 32px;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-}
-.task p{
-color: #fff;
-    font-size: 16px;
-    margin-left: 8px;
-}
 
-
-.task.new{
-    cursor: pointer;
+.newTask img{
+    width: 13px;
+    height: 13px;
 }
-
-.task.new img{
-    width: 12px;
-    height: 12px;
+.newGroup img{
+    width: 16px;
+    height: 16px;
 } 
 
-.task.new p{
-    color: #fff;
+/*
+.task.newTask p{
+    
 } 
+*/
 
 .newGroup{
     flex-direction: row;
@@ -163,20 +165,28 @@ color: #fff;
     height: 50px;
     width: 100%;
     background-color: #fff;
+    display: flex;   
+}
+.newTask{
+    flex-direction: row;
+    width: 100%;
+    height: 32px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
-.clickSwap{
+.taskSwap{
+    display: none;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.groupSwap{
     display: none;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
-
 
 .beforeClick{
 }
@@ -188,23 +198,21 @@ color: #fff;
 }
 .afterClick.active{
     display: flex;
+    
 }
 
-.beforeClick:hover{
+
+.newGroup .beforeClick:hover{
     background-color: hsla(60, 0%, 0%,0.6);
 }
-
-.addGroupIcon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18px;
-    height:18px;
+.newTask .beforeClick:hover{
+    padding-left: 10px;
+    transition: 200ms all;
 }
-.addGroupIcon img{
-    width: 100%;
-    height: 100%;
-} 
+
+
+
+
 #newGroupTitle{
     font-size:18px;
     color: var(--accColor);
@@ -221,10 +229,30 @@ color: #fff;
     height: 100%;
     font-family: "poppins", sans-serif; 
 }
+#newTaskName{
+    border: 0px;
+    color: #FFF;
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    border-radius: 2px ;
+    background-color: transparent;
+    padding: 0px 0px;
+    height: 100%;
+    margin-left: 24px;
+    border-bottom: 1px solid #7c351e;
+    font-family: "poppins", sans-serif; 
+}
+
+
 #newGroupName:focus{
     outline: 0px;
 }
-#doneButton{
+#newTaskName:focus{
+    outline: 0px;
+}
+
+.groupSwap .doneButton{
     border: 0px;
     font-size: 16px;
     border-radius: 2px;
@@ -234,12 +262,30 @@ color: #fff;
     height: 100%;
 /*    margin-left: 10px;*/
 }
-#doneButton:hover{
+
+.taskSwap .doneButton{
+    border: 0px;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 60px;
+    height: 100%;
+    
+    height: 100%;
+    margin-left: 10px;
+    background-color: rgba(0,0,0,0.25);
+    color: #fff;
+}
+
+.taskSwap .doneButton:hover{
+    background-color: transparent;
+    color: #7c351e;
+}
+
+.groupSwap .doneButton:hover{
     background-color: hsla(15, 91%, 68%,0.15);
 }
-#doneButton:focus{
-    outline: 0px;
-}
+
+
 
 
 
