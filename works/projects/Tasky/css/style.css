@@ -94,6 +94,7 @@ nav{
     transition: 200ms ease;
     background-color: #F88762;
 }
+.task{
     display: flex;
     margin: 4px 0px;
     height: 32px;
