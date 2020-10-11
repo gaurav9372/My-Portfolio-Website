@@ -98,6 +98,7 @@ nav{
     display: flex;
     margin: 4px 0px;
     height: 32px;
+    padding: 0px;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
