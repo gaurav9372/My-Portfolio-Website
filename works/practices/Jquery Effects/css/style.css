@@ -1,0 +1,188 @@
+/*Resetting*/
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    font-size: 1em;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button{
+    padding: 0px;
+    margin: 0px;
+}
+
+input{
+    font-size: 1em;
+}
+
+
+/*Main*/
+body{
+    background-color: #77441e;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    flex-direction: column;
+}
+
+nav h5{
+    font-size: 30px;
+}
+
+nav p{
+   font-size: 16px; 
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 20px;
+/*    padding: 5px;*/
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: #fff;
+    margin: 15px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25); 
+    
+}
+
+header{
+    display: flex;
+    height: 60px;
+    background-color: #d46819;
+/*    padding: 0px 10px;*/
+    justify-content: flex-start;
+    padding: 0px 20px;
+    align-items: center;
+    color: #fff;
+/*    font-weight: bold;*/
+    font-size: 18px;
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    height: 200px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0px;
+/*    background-color: aqua;*/
+}
+
+.content.stop{
+    align-items: flex-start;
+    padding: 30px 20px;
+}
+
+.note{
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 4px;
+    background-color: black;
+    color: #fff;
+    height: 40px;
+}
+
+
+.block{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: red;
+    color: #fff;
+    height: 80px;
+/*    display: none;*/
+}
+.content.stop .block{
+    width: 40px;
+    margin: 0px;
+    margin-top: 30px;
+    height: 40px;
+    background-color: blue;
+}
+
+.panel{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.smallButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    border-radius: 4px;
+    background-color: black;
+    color: #fff;
+    margin-right:  10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+
+}
+
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}
+
+
+
