@@ -10,7 +10,7 @@ const photos = [
     path:"resources/images/Image2.jpg",
     caption:"Image 2"
 },
- 
+  
 {
     id:3,
     path:"resources/images/Image3.jpg",
