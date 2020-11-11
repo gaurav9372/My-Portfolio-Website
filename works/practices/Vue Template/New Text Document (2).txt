@@ -1,0 +1,12 @@
+vhtml
+vbind
+vonce
+von
+.prevent
+
+
+shorthand
+
+v-bind:href  =>   :href
+v-on:click  =>   @click
+

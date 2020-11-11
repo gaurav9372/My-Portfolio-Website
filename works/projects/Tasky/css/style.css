@@ -5,21 +5,26 @@
 box-sizing: border-box;
 }
 
-body{
+body,button{
     font-family: "poppins", sans-serif;
     font-size: 1em;
-
     background-color: #F0F0F0;
 }
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button{
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button,input{
     padding: 0px;
     margin: 0px;
 }
+
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
 input{
-    font-size: 1em;
-    padding: 0px;
-    margin: 0px;
+    font-size: 16px;
 }
+
 button:focus{
     outline: 0px;
 }
@@ -50,7 +55,7 @@ nav{
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 90px 10px 0px;
+    padding: 60px 10px 10px;
     
 }
 
@@ -59,7 +64,8 @@ nav{
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    padding: 0px 20px;
+    padding: 20px 0px 0px;
+    height: 52px;
     font-size: 14px;
 }
 #settings p{
@@ -71,128 +77,176 @@ nav{
     flex-direction: column;
     width: 100%;
     height: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
+
 .group{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 5px;
-    margin: 7px 0px; 
-    overflow: hidden;
-    transition: 300ms all;
-}
-
-.groupContent{
-    padding: 10px 30px; 
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 200ms ease;
-    background-color: #F88762;
-}
-.task{
-    display: flex;
-    margin: 4px 0px;
-    height: 32px;
-    padding: 0px;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    border-radius: 5px;
+    margin-bottom: 14px ; 
+    overflow: hidden;
+    transition: 300ms all;
 }
 
 .groupHeader{
     display: flex;
     width: 100%;
     height: 50px;
+    background-color: #fff;
     align-items: center;
-    padding: 0px 20px;
+    padding-left: 15px;
 }
-
 .groupTitle{
     font-size: 18px;
     width: 100%;
     overflow: hidden;
-}
-.taskTitle{
-    color: #fff;
-    width: 100%;
-    font-size: 16px;
-    margin-left: 8px;
-    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .arrowIcon{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 16px;
-}
-.arrowIcon img{
-    width: 100%;
+    width: 50px;
     height: 100%;
-}
-
-.arrowIcon.active{
-    transform: rotate(180deg);
+    background-color: #fff;
     transition: 300ms all;
 }
-.groupContent.active{
+.arrowIcon.active{
+    background-color: #f7f7f7;
+}
+.arrowIcon img{
+    width: 18px;
+    height: 18px;
+    transition: 300ms all;
+}
+.arrowIcon img.active{
+    transform: rotate(180deg); 
+}
+
+.groupContent{
+    padding: 10px 0px; 
     display: flex;
-}
-
-
-.newTask img{
-    width: 13px;
-    height: 13px;
-}
-.newGroup img{
-    width: 16px;
-    height: 16px;
-} 
-
-/*
-.task.newTask p{
-    
-} 
-*/
-
-.newGroup{
-    flex-direction: row;
-    border: 1px solid var(--accColor);
-    height: 50px;
     width: 100%;
-    background-color: #fff;
-    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+/*    transition: 200ms ease;*/
+    background-color: #F88762;
 }
-.newTask{
-    flex-direction: row;
+
+.task{
+    display: flex;
+    margin: 5px 0px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.task input[type=checkbox]{
+    margin-left: 25px;
+}
+
+.taskTitle{
+    display: inline;
+    line-height: 32px;
+    vertical-align: middle;
+    color: #fff;
     width: 100%;
     height: 32px;
+    font-size: 16px;
+    margin:0px 23px 0px 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.options{
+    position: relative;
+    right: -200px;
     display: flex;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+/*    display: none;*/
+/*    flex-direction: row;*/
+/*    background-color: red;*/
+    transition: 500ms all;
+    padding-right: 12px;
+}
+
+.options.active{
+    right: 0px;
+}
+
+.options div{
+    height: 32px;
+    background-color: #e36a43;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    height: 100%;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    padding:0px 10px;
+    cursor: pointer;
+}
+
+.options div:hover{
+    background-color: #b95434;
+}
+
+.options div img{
+    width: 18px;
+    margin-right: 6px;
+    height: 18px;
+}
+
+.newTask{
+    padding: 0px 25px;
 }
 
 .taskSwap{
     display: none;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-.groupSwap{
-    display: none;
     width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
-.beforeClick{
+.taskSwap.beforeClick{
+    height: 32px;
+    width: 100%;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+/*    transition: 200ms all;*/
+    cursor: pointer;
 }
-.afterClick{
+
+.taskSwap.beforeClick p{
+    color: #fff;
+    margin: 0px 8px;
+}
+
+.taskSwap.beforeClick img{
+    width: 15px;
+    height: 15px;
+}
+
+.taskSwap.afterClick{
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+/*    border: 2px solid white;*/
+    padding-left: 23px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .beforeClick.active{
@@ -202,14 +256,77 @@ nav{
     display: flex;
     
 }
-
-
-.newGroup .beforeClick:hover{
-    background-color: hsla(60, 0%, 0%,0.6);
+/*
+.groupContent.active{
+    display: flex;
 }
-.newTask .beforeClick:hover{
-    padding-left: 10px;
-    transition: 200ms all;
+*/
+
+#newTaskName{
+    border: 0px;
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    border-radius: 2px ;
+    background-color: transparent;
+    height: 32px;
+    border-bottom: 1px solid #7c351e;
+    font-family: "poppins", sans-serif; 
+}
+
+
+
+#newTaskName:focus{
+    outline: 0px;
+}
+
+.taskOptions{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+}
+.taskButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    width: 80px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #F88762;
+    height: 100%;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.taskButton:hover{
+    background-color: #7c351e;
+    color: #fff;
+}
+
+
+
+
+
+
+.newGroup img{
+    width: 16px;
+    height: 16px;
+} 
+
+
+
+.newGroup{
+    flex-direction: row;
+    border: 1px solid var(--accColor);
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;   
 }
 
 
@@ -222,6 +339,28 @@ nav{
 }
 
 
+
+.groupSwap{
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.newGroup .beforeClick:hover{
+    background-color: #F88762;
+    
+}
+.newGroup .beforeClick:hover #newGroupTitle{
+    color: #fff;
+}
+
+
 #newGroupName{
     border: 0px;
     font-size: 16px;
@@ -231,26 +370,9 @@ nav{
     height: 100%;
     font-family: "poppins", sans-serif; 
 }
-#newTaskName{
-    border: 0px;
-    color: #FFF;
-    display: flex;
-    flex: 1;
-    font-size: 14px;
-    border-radius: 2px ;
-    background-color: transparent;
-    padding: 0px 0px;
-    height: 100%;
-    margin-left: 24px;
-    border-bottom: 1px solid #7c351e;
-    font-family: "poppins", sans-serif; 
-}
 
 
 #newGroupName:focus{
-    outline: 0px;
-}
-#newTaskName:focus{
     outline: 0px;
 }
 
@@ -265,23 +387,6 @@ nav{
 /*    margin-left: 10px;*/
 }
 
-.taskSwap .doneButton{
-    border: 0px;
-    font-size: 16px;
-    border-radius: 2px;
-    width: 60px;
-    height: 100%;
-    
-    height: 100%;
-    margin-left: 10px;
-    background-color: rgba(0,0,0,0.25);
-    color: #fff;
-}
-
-.taskSwap .doneButton:hover{
-    background-color: transparent;
-    color: #7c351e;
-}
 
 .groupSwap .doneButton:hover{
     background-color: hsla(15, 91%, 68%,0.15);

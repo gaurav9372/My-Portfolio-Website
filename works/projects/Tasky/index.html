@@ -4,76 +4,90 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-     
+
     <link href="https://fonts.googleapis.com/css2?
     family=Poppins:wght@300;400
     &display=swap" rel="stylesheet">
-    
-    <link   rel="stylesheet"
-            type="text/css"  
-            href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Tasky</title>
 </head>
 
 <body>
 
-<nav>
-      <div id="logo">Tasky</div>
-</nav>
-       
-<section id="frontSection"> 
-<div id="settings">
-            <p>Sort by</p>  
-            <p>Date</p>  
-    </div>
-    
-<div id="groups">
-    <div class="group">
-        <div class="groupHeader">
-            <p class="groupTitle">
-                Cats
-            </p>
+    <nav>
+        <div id="logo">Tasky</div>
+    </nav>
 
-            <div class="arrowIcon">
-                <img src="resources/Icons/arrow.svg">
-            </div>
+    <section id="frontSection">
+        <div id="settings">
+            <p>Sort by</p>
+            <p>Date</p>
         </div>
 
-        <div class="groupContent">
+        <div id="groups">
+            <div class="group group1">
+                <div class="groupHeader">
+                    <p class="groupTitle">
+                        Cats
+                    </p>
 
-<!--
-            <div class="task">
-                <input type="checkbox">
-                <p class="taskTitle">Task 1</p>
-            </div>
--->
-            
-            <div class="task newTask">
-               
-                <div class="taskSwap beforeClick active">
-
-                    <img src="resources/Icons/addTask - White.svg">
-                    
-                    <p class="taskTitle">New Task</p>
-
+                    <div class="arrowIcon">
+                        <img src="resources/Icons/arrow.svg">
+                    </div>
                 </div>
 
-                <div class="taskSwap afterClick ">
+                <div class="groupContent">
 
-                    <input type="text" name="newTaskName" id="newTaskName" placeholder="">
+                    <div class="task">
+                        <input type="checkbox">
 
-                    <button type="button" class="doneButton">
-                        Add
-                    </button>
-                    
+                        <p class="taskTitle">Russian knl dpakms dapoms aposd apof a skf a</p>
+
+                        <div class="options">
+                            <div class="editButton">
+                                <img src="resources/Icons/rename.svg">Edit
+                            </div>
+                            <div class="deleteButton">
+                                <img src="resources/Icons/delete.svg">Delete
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task newTask">
+
+                        <div class="taskSwap beforeClick active">
+
+                            <img src="resources/Icons/addTask - White.svg">
+
+                            <p>New</p>
+
+                        </div>
+
+                        <div class="taskSwap afterClick ">
+
+                            <input type="text" name="newTaskName" id="newTaskName" placeholder="">
+
+                            <div class="taskOptions">
+
+                                <button type="button" class="taskButton add">
+                                    Add
+                                </button>
+
+                                <button type="button" class="taskButton cancel">
+                                    Cancel
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            
-        </div>
-    </div>
 
-    <!--
-            <div class="group group2"> 
+
+            <!--            <div class="group group2"> 
                
                 <div class="groupHeader">
                 <p class="groupTitle">
@@ -95,24 +109,21 @@
                 
             </div>
             
--->
+
+   
     <div class="group newGroup">
 
         <div class="groupSwap beforeClick active">
-
-            
-            <img src="resources/Icons/addGroup.svg">
-            
-
+        
             <p id="newGroupTitle">
-                New Group
+                Add New Group
             </p>
 
         </div>
 
         <div class="groupSwap afterClick ">
 
-            <input type="text" name="newGroupName" id="newGroupName" placeholder="Enter group name">
+            <input type="text" name="newGroupName" id="newGroupName" placeholder="Enter group name" maxlength="40">
 
             <button type="button" class="doneButton">
                 Done
@@ -120,12 +131,13 @@
         </div>
 
     </div>
+ -->
+        </div>
+    </section>
 
-</div>
-</section>
-    
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/script.js"></script>
-    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
