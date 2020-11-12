@@ -1,29 +1,18 @@
 const photos = [
 {
     id:1,
-    path:"resources/images/Image1.jpg",
-    caption:"Image 1"
-},
-
-{
+    fileName:"Arrow"
+},{ 
     id:2,
-    path:"resources/images/Image2.jpg",
-    caption:"Image 2"
-},
-  
-{
+    fileName:"Cameraman"
+},{
     id:3,
-    path:"resources/images/Image3.jpg",
-    caption:"Image 3"
-},
-
-{
+    fileName:"Dog"
+},{
     id:4,
-    path:"resources/images/Image4.jpg",
-    caption:"Image 4"
+    fileName:"GodofWar"
     }
 ]
-
 
 Vue.component('album',{
     
@@ -31,11 +20,11 @@ Vue.component('album',{
      
     <div class="thumbnail">
             <div class="imageCont">
-                <img :src="photo.path">
+                <img :src="'resources/images/'+photo.fileName+'.jpg'">
             </div>    
             
             <div class="caption">
-                       {{photo.caption}}
+                       {{photo.fileName}}
             </div>
 </div>`,
               

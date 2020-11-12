@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;600
+    &display=swap" rel="stylesheet">
+    
+    <link   rel="stylesheet"
+            type="text/css"  
+            href="css/style.css">
+    
+    <title>Border-radius</title>
+</head>
+ 
+<body>
+
+    <div id="app">
+    
+    <nav>
+        <P class="logo">Border-radius</P>
+        <p class="note">Visualized</p>
+    </nav>
+
+    
+ 
+
+    <section class="onevalue">
+        
+        <div class="card">
+            
+        <div class="heading">
+            Using one value
+        </div>
+        <div class="desc">
+            This way we can apply the roundness value to all four borders at a time
+        </div>
+            
+        </div>
+        
+        <div class="screen">
+            
+            <div class="box" v-bind:style="{borderRadius:roundness+'px'}">200x200</div>
+            
+<!--
+            <div class="code_info">
+                <p class="label">CSS code</p>
+                <p class="code">border-radius: 0px;</p>
+            </div>
+-->
+        </div>
+
+        <div class="content">
+
+            
+
+            <div class="row code">
+                    <P>border-radius: {{roundness}}px;</P>
+            </div>
+            <div class="row setting">
+            
+                <p>0</p>
+                
+                <input class="slider" type="range" min="0" v-model="roundness" max="200">
+                
+                <p>200</p>
+            
+            </div>
+
+            
+            
+
+        </div>
+        
+        </section>
+        
+    
+    <footer>
+    This is footer
+    </footer>
+    
+     
+    </div>
+    
+    <script src="js/vue.js">
+    </script>
+    <script src="js/app.js"></script>  
+
+</body>
+</html>
