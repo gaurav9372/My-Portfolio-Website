@@ -1,0 +1,27 @@
+body{
+     width: 100%;
+    background-color: #f5f5f5;
+}
+main{
+    width: 100%;
+    
+    padding: 20px;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #000;
+    height: 45px;
+}
+
+.item:hover{
+    background-color: crimson;
+    color: #fff;
+}
