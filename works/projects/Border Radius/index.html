@@ -4,90 +4,380 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css2?
     family=Poppins:wght@300;400;600
     &display=swap" rel="stylesheet">
-    
-    <link   rel="stylesheet"
-            type="text/css"  
-            href="css/style.css">
-    
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <title>Border-radius</title>
 </head>
- 
+
 <body>
 
     <div id="app">
-    
-    <nav>
-        <P class="logo">Border-radius</P>
-        <p class="note">Visualized</p>
-    </nav>
 
-    
- 
+        <nav>
+            <P class="logo">Border-radius</P>
+            <p class="note">Visualized</p>
+        </nav>
 
-    <section class="onevalue">
-        
-        <div class="card">
-            
-        <div class="heading">
-            Using one value
-        </div>
-        <div class="desc">
-            This way we can apply the roundness value to all four borders at a time
-        </div>
-            
-        </div>
-        
-        <div class="screen">
-            
-            <div class="box" v-bind:style="{borderRadius:roundness+'px'}">200x200</div>
-            
-<!--
+        <section class="onevalue">
+
+
+            <div class="card">
+
+                <div class="heading">
+                    Using one value
+                </div>
+                <div class="desc">
+                    This way we can apply the roundness value to all four borders at a time
+                </div>
+
+            </div>
+
+            <div class="screen">
+
+                <div class="box box1" v-bind:style="{borderRadius:roundnessOne+'px'}">
+                
+        <div class="innerCircle" id="topLeft" v-bind:style="{
+                                                           
+        height:roundnessOne*2 +'px', width: roundnessOne*2 +'px'}"></div>
+                    
+                    
+                
+                </div>
+
+                <!--
             <div class="code_info">
                 <p class="label">CSS code</p>
                 <p class="code">border-radius: 0px;</p>
             </div>
 -->
-        </div>
-
-        <div class="content">
-
-            
-
-            <div class="row code">
-                    <P>border-radius: {{roundness}}px;</P>
-            </div>
-            <div class="row setting">
-            
-                <p>0</p>
-                
-                <input class="slider" type="range" min="0" v-model="roundness" max="200">
-                
-                <p>200</p>
-            
             </div>
 
-            
-            
+            <div class="content">
 
-        </div>
-        
+
+
+                <div class="row code">
+                    <div>border-radius:
+                        <p class="brValue">{{roundnessOne}}</p>px;
+                    </div>
+                </div>
+
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessOne" max="200">
+
+                    <p>200</p>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="twovalues">
+
+            <div class="card">
+
+                <div class="heading">
+                    Using two values
+                </div>
+                <div class="desc">
+                    mhbkh jhnlj iohj oijn ohlib fkugv ykuvhj hhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoulhhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoul
+                </div>
+
+            </div>
+
+            <div class="screen">
+
+                <div class="box box2" v-bind:style="{borderRadius:roundnessTwoA+'px'+' '+ roundnessTwoB+'px'}">
+                
+                    
+                    200x200
+                
+                </div>
+
+                <!--
+            <div class="code_info">
+                <p class="label">CSS code</p>
+                <p class="code">border-radius: 0px;</p>
+            </div>
+-->
+            </div>
+
+            <div class="content">
+
+
+
+                <div class="row code">
+                    <div>border-radius:
+                        <p class="brValue">{{roundnessTwoA}}</p>px
+                        <p class="brValue">{{roundnessTwoB}}</p>px;
+                    </div>
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessTwoA" max="200">
+
+                    <p>200</p>
+
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessTwoB" max="200">
+
+                    <p>200</p>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="threevalues">
+
+            <div class="card">
+
+                <div class="heading">
+                    Using three values
+                </div>
+                <div class="desc">
+                    mhbkh jhnlj iohj oijn ohlib fkugv ykuvhj hhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoulhhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoul
+                </div>
+
+            </div>
+
+            <div class="screen">
+
+                <div class="box box2" v-bind:style="{borderRadius:roundnessThreeA+'px'+' '+ roundnessThreeB+'px'+' '+ roundnessThreeC+'px'}">200x200</div>
+
+                <!--
+            <div class="code_info">
+                <p class="label">CSS code</p>
+                <p class="code">border-radius: 0px;</p>
+            </div>
+-->
+            </div>
+
+            <div class="content">
+
+
+
+                <div class="row code">
+                    <div>border-radius:
+                        <p class="brValue">{{roundnessThreeA}}</p>px
+                        <p class="brValue">{{roundnessThreeB}}</p>px
+                        <p class="brValue">{{roundnessThreeC}}</p>px;
+                    </div>
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessThreeA" max="200">
+
+                    <p>200</p>
+
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessThreeB" max="200">
+
+                    <p>200</p>
+
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessThreeC" max="200">
+
+                    <p>200</p>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="Fourvalues">
+
+            <div class="card">
+
+                <div class="heading">
+                    Using four values
+                </div>
+                <div class="desc">
+                    mhbkh jhnlj iohj oijn ohlib fkugv ykuvhj hhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoulhhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoul
+                </div>
+
+            </div>
+
+            <div class="screen">
+
+                <div class="box box2" v-bind:style="{borderRadius:roundnessFourA+'px'+' '+ roundnessFourB+'px'+' '+ roundnessFourC+'px'+' '+ roundnessFourD+'px'}">200x200</div>
+
+                <!--
+            <div class="code_info">
+                <p class="label">CSS code</p>
+                <p class="code">border-radius: 0px;</p>
+            </div>
+-->
+            </div>
+
+            <div class="content">
+
+
+
+                <div class="row code">
+                    <div>border-radius:
+                        <p class="brValue">{{roundnessFourA}}</p>px
+                        <p class="brValue">{{roundnessFourB}}</p>px
+                        <p class="brValue">{{roundnessFourC}}</p>px
+                        <p class="brValue">{{roundnessFourD}}</p>px;
+                    </div>
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessFourA" max="200">
+
+                    <p>200</p>
+
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessFourB" max="200">
+
+                    <p>200</p>
+
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessFourC" max="200">
+
+                    <p>200</p>
+
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessFourD" max="200">
+
+                    <p>200</p>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="introeclipse">knnlk;,
         </section>
         
-    
-    <footer>
-    This is footer
-    </footer>
-    
-     
+        <section class="twovalues">
+
+            <div class="card">
+
+                <div class="heading">
+                    Using two values with slash
+                </div>
+                <div class="desc">
+                    mhbkh jhnlj iohj oijn ohlib fkugv ykuvhj hhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoulhhgulb yogblihbi yogbu ygihb ybh hoyuhbuybbbbubbhv ybhib ippbhi iiyhbhb hugoul
+                </div>
+
+            </div>
+
+            <div class="screen">
+
+                <div class="box box2" v-bind:style="{borderRadius:roundnessTwoA_s+'px'+'/'+ roundnessTwoB_s+'px'}">200x200</div>
+
+                <!--
+            <div class="code_info">
+                <p class="label">CSS code</p>
+                <p class="code">border-radius: 0px;</p>
+            </div>
+-->
+            </div>
+
+            <div class="content">
+
+
+
+                <div class="row code">
+                    <div>border-radius:
+                        <p class="brValue">{{roundnessTwoA_s}}</p>px /
+                        <p class="brValue">{{roundnessTwoB_s}}</p>px;
+                    </div>
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessTwoA_s" max="200">
+
+                    <p>200</p>
+
+                </div>
+                <div class="row setting">
+
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundnessTwoB_s" max="200">
+
+                    <p>200</p>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <footer>
+            This is footer
+        </footer>
+
     </div>
-    
+
     <script src="js/vue.js">
     </script>
-    <script src="js/app.js"></script>  
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>
