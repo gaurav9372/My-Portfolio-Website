@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;600
+    &display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Border-radius</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <nav>
+
+            <div class="logo">
+                <P class="title">Border-radius</P>
+                <p class="note">Visualized</p>
+            </div>
+
+            <div class="menu">
+                <img src="resources/Icons/menu.svg">
+            </div>
+
+        </nav>
+
+        <section class="section intro">
+
+
+            <div class="textBlock">
+
+                <p class="question">
+                    What is border-radius ?
+                </p>
+
+                <p class="answer">
+                    The border-radius is a CSS property which rounds the corners of an element’s outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
+                </p>
+
+            </div>
+
+
+
+        </section>
+
+        <!--
+        <div class="intro_svg">
+
+                <img src="resources/images/introSVG.svg">
+                
+            </div>
+-->
+        <div class="texts">
+
+            <p>Now , lets try understanding it.</p>
+            <p>Here is a div with height 150px and width 150px </p>
+
+        </div>
+
+
+        <div class="playgroundHor">
+
+            <div class="split">
+                <div class="box b150">150x150</div>
+            </div>
+
+            <div class="split">
+                <div class="code">
+
+                    div{<br>
+                    height: 150px ;<br>
+                    width : 150px;<br>
+                    background: #00FFA8;<br>
+                    }
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="texts">
+
+            <p>we can easily make its corners rounded by applying the border-radius css property. Lets have rounded corners of 20px.</p>
+
+        </div>
+
+        <div class="playgroundHor">
+
+            <div class="split">
+                <div class="box b150 br20">150x150</div>
+            </div>
+
+            <div class="split">
+                <div class="code">
+                    div{<br>
+                    height: 150px ;<br>
+                    width : 150px;<br>
+
+                    <p>border-radius: 20px;</p>
+
+                    background: #00FFA8;<br>
+                    }
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="texts">
+
+            <p>easy , isnt it ? But now the real quetions is...</p>
+
+        </div>
+
+
+<section class="section works">
+
+
+            <div class="textBlock">
+
+                <p class="question">
+                    How border-radius works ?
+                </p>
+
+                <p class="answer">
+                    Well, we know that css follows Box Model , which means everything in css has a box around it. Even when we can not see it. (You can always check its border with the border css property).
+
+                    When we set border-radius property to an element , Its all four corners are rounded with reference to the four assigned invisible circles with radius equal to the value or values which we put in border-radius property.
+                </p>
+
+            </div>
+
+
+
+        </section>
+
+        
+        <div class="texts">
+
+            <p>Lets see it in working. Hers’s another div with height and width equal to <b>200px</b>. See how border-radius rounds the corners of div with reference to four circles.So the value which we write in border-radius property is actually the radius of these circles which guide the roundenss.</p>
+
+        </div>
+        
+ <div class="playgroundVer">
+
+            <div class="split">
+                <div class="box b200" v-bind:style="{borderRadius:roundness50+'px'}">
+
+                <div class="guideCircles top_left" v-bind:style="guideCircles50" v-if="visible"></div>
+                    
+                <div class="guideCircles top_right" v-bind:style="guideCircles50" v-if="visible"></div>
+                    
+                <div class="guideCircles bottom_right" v-bind:style="guideCircles50" v-if="visible"></div>
+                    
+                <div class="guideCircles bottom_left" v-bind:style="guideCircles50" v-if="visible"></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="split">
+                
+                <div class="panel">
+                
+                <div class="code" >
+                    <p>border-radius: {{roundness50}}px;</p>
+                </div>
+                
+                    <button @click="visible = !visible" class="guideButton">
+                    <p v-if="visible">Hide</p>
+                    <p v-if="!visible">Show</p>
+                        <p>Circles</p>
+                    </button>
+                    
+                </div>
+                
+                
+                <div class="slider_cont">
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundness50" max="50">
+
+                    <p>50</p>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="texts">
+
+            <p>We can now see how the border-radius applies the rounded corders to any element. 
+
+We used px (pixels) for applying value. We can also write the value in em , rem and %. (px and % are usually preffered over others)</p>
+
+        </div>
+        
+        <section class="section ifHalf">
+
+
+            <div class="textBlock">
+
+                <p class="question">
+                    What if border-radius value is equal to half the size of element ?
+                </p>
+
+            </div>
+
+            
+
+        </section>
+        
+        <div class="texts">
+            <p>Lets check it out. Slide the pointer all the way to 100, that is half of 200, the width of our div element.</p>
+</div>
+        
+         <div class="playgroundVer">
+
+            <div class="split">
+                <div class="box b200" v-bind:style="{borderRadius:roundness100+'px'}">
+
+                <div class="guideCircles top_left" v-bind:style="guideCircles100" v-if="visible"></div>
+                    
+                <div class="guideCircles top_right" v-bind:style="guideCircles100" v-if="visible"></div>
+                    
+                <div class="guideCircles bottom_right" v-bind:style="guideCircles100" v-if="visible"></div>
+                    
+                <div class="guideCircles bottom_left" v-bind:style="guideCircles100" v-if="visible"></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="split">
+                
+                <div class="panel">
+                
+                <div class="code" >
+                    <p>border-radius: {{roundness100}}px;</p>
+                </div>
+                
+                    <button @click="visible = !visible" class="guideButton">
+                    <p v-if="visible">Hide</p>
+                    <p v-if="!visible">Show</p>
+                        <p>Circles</p>
+                    </button>
+                    
+                </div>
+                
+                
+                <div class="slider_cont">
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundness100" max="100">
+
+                    <p>100</p>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="texts">
+        <p>
+                    We are getting a circle. so now we know that to make a circle are supposed to have a square element and set its border radius equal to half the width of it or we can simply write bordr-radius : 50% if we dont want to calculate the half wodth of any element. 
+                </p>
+        </div>
+        
+        
+<!--
+        <section class="section ifHalfAnswer">
+
+
+        </section>
+-->
+        
+        <footer>
+            Work in progress
+        </footer>
+
+    </div>
+
+    <script src="js/vue.js">
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
