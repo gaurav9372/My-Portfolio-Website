@@ -27,6 +27,9 @@ button {
     margin: 0px;
 }
 
+button,input{
+    font-family: 'Poppins', sans-serif;
+}
 
 /*Main*/
 
@@ -117,25 +120,27 @@ nav {
     width: calc(100% - 70px);
     border-radius: 0px 0px 80px 0px;
     padding: 130px 35px 60px;
+    padding: 130px 40px 60px 30px;
 }
 
 .works {
-    width: 100%;
-    border-radius: 120px 0px 120px 0px;
-    padding: 60px 40px;
+    width: calc(100% - 20px);
+    border-radius: 120px 0px 0px 120px;
+    padding: 60px 25px 60px 40px;
+    align-self: flex-end;
 }
 
 .ifHalf {
-    width: 90%;
-    border-radius: 0px 40px 180px 0px;
-    padding: 60px 40px;
+    width: calc(100% - 70px);
+    border-radius: 0px 30px 30px 0px;
+    padding: 40px 10px 40px 40px;
 }
 
-.ifHalfAnswer {
+.ifEqual{
+    width: calc(100% - 70px);
+    border-radius: 20px 0px 0px 20px;
+    padding: 40px 10px 40px 40px;
     align-self: flex-end;
-    width: 90%;
-    border-radius: 200px 0px 0px 200px;
-    padding: 50px 50px;
 }
 
 .textBlock {
@@ -152,6 +157,9 @@ nav {
 }
 
 .ifHalf .question {
+    padding-bottom: 0px;
+}
+.ifEqual .question {
     padding-bottom: 0px;
 }
 
@@ -217,6 +225,7 @@ nav {
 
 .playgroundVer .split {
     width: 100%;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -248,6 +257,15 @@ nav {
     height: 200px;
     width: 200px;
     font-size: 12px;
+}
+
+.dynamic{
+    height: 200px;
+    width: 300px;
+}
+
+.b200.trans{
+    opacity: 0.3;
 }
 
 .br20 {
@@ -288,6 +306,13 @@ nav {
 .panel {
     display: flex;
 }
+.sliderRow {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    justify-content:space-between;
+    align-items: center;
+}
 
 .slider_cont {
     display: flex;
@@ -295,6 +320,14 @@ nav {
     align-items: center;
     padding: 30px 0px;
     width: 100%;
+}
+
+.sliderRow  .slider_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    width: 50%;
 }
 
 .slider_cont p {
@@ -346,7 +379,7 @@ nav {
     position: absolute;
     width: 50%;
     height: 1px;
-    background-color: #ff0000;
+    background-color: blue;
     transform-origin: 0% 50%;
     transition: 500ms all;
 }
@@ -372,9 +405,10 @@ nav {
     justify-content: center;
     align-items: center;
     width: 120px;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.5px;
-    background-color: #464646;
+    background-color: #00422C;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
     color: #fff;
     border: 0px;
     border-radius: 25px;

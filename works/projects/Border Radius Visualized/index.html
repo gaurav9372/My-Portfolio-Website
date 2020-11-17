@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="utf-8">
-    
+
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?
@@ -117,12 +117,12 @@
 
         <div class="texts">
 
-            <p>Easy , isnt it ? But now the  quetions is...</p>
+            <p>Easy , isnt it ? But now the quetions is...</p>
 
         </div>
 
 
-<section class="section works">
+        <section class="section works">
 
 
             <div class="textBlock">
@@ -132,7 +132,7 @@
                 </p>
 
                 <p class="answer">
-                    Well, we know that css follows Box Model , which means everything in css has a box around it. Even when we can not see it. (You can always check its border with the border css property).
+                    Well, we know that css follows Box Model, which means everything in css has a box around it. Even when we can not see it. (You can always check its border with the border css property).
 
                     When we set border-radius property to an element , Its all four corners are rounded with reference to the four assigned invisible circles with radius equal to the value which we put in border-radius property.
                 </p>
@@ -143,53 +143,53 @@
 
         </section>
 
-        
+
         <div class="texts">
 
             <p>Lets see it in working. Hers’s another div with height and width equal to <b>200px</b>. See how border-radius rounds the corners of div with reference to four circles.So the value which we write in border-radius property is actually the radius of these circles(Blue line) which guide the roundenss.</p>
 
         </div>
-        
- <div class="playgroundVer">
+
+        <div class="playgroundVer">
 
             <div class="split">
                 <div class="box b200" v-bind:style="{borderRadius:roundness50+'px'}"> 200x200
 
-                <div class="guideCircles top_left" v-bind:style="guideCircles50" v-if="visible">
-                    
-        <div class="radius radVer"></div>
-        <div class="radius radHor"></div>
-                    
+                    <div class="guideCircles top_left" v-bind:style="guideCircles50" v-if="visible">
+
+                        <div class="radius radVer"></div>
+                        <div class="radius radHor"></div>
+
+                    </div>
+
+                    <div class="guideCircles top_right" v-bind:style="guideCircles50" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_right" v-bind:style="guideCircles50" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_left" v-bind:style="guideCircles50" v-if="visible"></div>
+
                 </div>
-                    
-                <div class="guideCircles top_right" v-bind:style="guideCircles50" v-if="visible"></div>
-                    
-                <div class="guideCircles bottom_right" v-bind:style="guideCircles50" v-if="visible"></div>
-                    
-                <div class="guideCircles bottom_left" v-bind:style="guideCircles50" v-if="visible"></div>
-                    
-                </div>
-                
-                
+
+
             </div>
 
             <div class="split">
-                
+
                 <div class="panel">
-                
-                <div class="code" >
-                    <p>border-radius: {{roundness50}}px;</p>
-                </div>
-                
+
+                    <div class="code">
+                        <p>border-radius: {{roundness50}}px;</p>
+                    </div>
+
                     <button @click="visible = !visible" class="guideButton">
-                    <p v-if="visible">Hide</p>
-                    <p v-if="!visible">Show</p>
+                        <p v-if="visible">Hide</p>
+                        <p v-if="!visible">Show</p>
                         <p>Circles</p>
                     </button>
-                    
+
                 </div>
-                
-                
+
+
                 <div class="slider_cont">
                     <p>0</p>
 
@@ -200,16 +200,16 @@
             </div>
 
         </div>
-        
-        
+
+
         <div class="texts">
 
-            <p>We can now see how the border-radius applies the rounded corders to any element. 
+            <p>We can now see how the border-radius applies the rounded corders to any element.
 
-We used px (pixels) for applying value. We can also write the value in em , rem and %. (px and % are usually preffered over others)</p>
+                We used px (pixels) for applying value. We can also write the value in em , rem and %. (px and % are usually preffered over others)</p>
 
         </div>
-        
+
         <section class="section ifHalf">
 
 
@@ -221,52 +221,52 @@ We used px (pixels) for applying value. We can also write the value in em , rem 
 
             </div>
 
-            
+
 
         </section>
-        
+
         <div class="texts">
             <p>Lets check it out. Slide the pointer all the way to 100, that is half of 200, the width of our div element.</p>
-</div>
-        
-         <div class="playgroundVer">
+        </div>
+
+        <div class="playgroundVer">
 
             <div class="split">
                 <div class="box b200" v-bind:style="{borderRadius:roundness100+'px'}">200x200
 
-                <div class="guideCircles top_left" v-bind:style="guideCircles100" v-if="visible">
-                    <div class="radius radVer"></div>
-        <div class="radius radHor"></div>
+                    <div class="guideCircles top_left" v-bind:style="guideCircles100" v-if="visible">
+                        <div class="radius radVer"></div>
+                        <div class="radius radHor"></div>
                     </div>
-                    
-                <div class="guideCircles top_right" v-bind:style="guideCircles100" v-if="visible"></div>
-                    
-                <div class="guideCircles bottom_right" v-bind:style="guideCircles100" v-if="visible"></div>
-                    
-                <div class="guideCircles bottom_left" v-bind:style="guideCircles100" v-if="visible"></div>
-                    
+
+                    <div class="guideCircles top_right" v-bind:style="guideCircles100" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_right" v-bind:style="guideCircles100" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_left" v-bind:style="guideCircles100" v-if="visible"></div>
+
                 </div>
-                
-                
+
+
             </div>
 
             <div class="split">
-                
+
                 <div class="panel">
-                
-                <div class="code" >
-                    <p>border-radius: {{roundness100}}px;</p>
-                </div>
-                
+
+                    <div class="code">
+                        <p>border-radius: {{roundness100}}px;</p>
+                    </div>
+
                     <button @click="visible = !visible" class="guideButton">
-                    <p v-if="visible">Hide</p>
-                    <p v-if="!visible">Show</p>
+                        <p v-if="visible">Hide</p>
+                        <p v-if="!visible">Show</p>
                         <p>Circles</p>
                     </button>
-                    
+
                 </div>
-                
-                
+
+
                 <div class="slider_cont">
                     <p>0</p>
 
@@ -277,25 +277,196 @@ We used px (pixels) for applying value. We can also write the value in em , rem 
             </div>
 
         </div>
-        
-        
+
+
         <div class="texts">
-        <p>
-                    We are getting a circle. so now we know that to make a circle we are supposed to have a square element and set its border radius equal to half its width or we can simply write <b>border-radius : 50%</b> if we dont want to calculate half width of it. 
-                </p>
+            <p>
+                We are getting a circle. so now we know that to make a circle we are supposed to have a square element and set its border radius equal to half its width or we can simply write <b>border-radius : 50%</b> if we dont want to calculate half width of it.
+            </p>
         </div>
-        
-        
-<!--
-        <section class="section ifHalfAnswer">
+
+
+        <section class="section ifEqual">
+
+
+            <div class="textBlock">
+
+                <p class="question">
+                    What if border-radius value is equal to the size of element ?
+                </p>
+
+            </div>
+
 
 
         </section>
--->
-        
+
+        <div class="texts">
+            <p>Slide the pointer to 200px.</p>
+        </div>
+
+        <div class="playgroundVer">
+
+            <div class="split">
+                <div class="box b200" v-bind:style="{borderRadius:roundness200+'px'}">200x200
+
+                    <div class="guideCircles top_left" v-bind:style="guideCircles200" v-if="visible">
+                        <div class="radius radVer"></div>
+                        <div class="radius radHor"></div>
+                    </div>
+
+                    <div class="guideCircles top_right" v-bind:style="guideCircles200" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_right" v-bind:style="guideCircles200" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_left" v-bind:style="guideCircles200" v-if="visible"></div>
+
+                </div>
+
+
+            </div>
+
+            <div class="split">
+
+                <div class="panel">
+
+                    <div class="code">
+                        <p>border-radius: {{roundness200}}px;</p>
+                    </div>
+
+                    <button @click="visible = !visible" class="guideButton">
+                        <p v-if="visible">Hide</p>
+                        <p v-if="!visible">Show</p>
+                        <p>Circles</p>
+                    </button>
+
+                </div>
+
+
+                <div class="slider_cont">
+                    <p>0</p>
+
+                    <input class="slider" type="range" min="0" v-model="roundness200" max="200">
+
+                    <p>200</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="texts">
+            <p>Now you would be thinking why the div’s border is not changing after 100px ? Should not it be like this :
+            </p>
+        </div>
+
+        <div class="playgroundVer">
+            <div class="split">
+                <img src="resources/images/ifgreater.svg">
+            </div>
+        </div>
+
+
+        <div class="texts">
+            <p>
+                Yes right , but if we look closely , we see that this new shape has width and height less than our div’s orignal height and width.
+            </p>
+        </div>
+
+
+        <div class="playgroundVer">
+            <div class="split">
+                <img src="resources/images/ifgreater2.svg">
+            </div>
+        </div>
+
+        <div class="texts">
+            <p>
+                In our earlier cases when border-radius was less than or equal to half the width of element , the changed shape of our element always had dimension of 200x200 retained.
+            </p>
+            <br>
+            <p>Increasing border-radius past 100 would shrink the shape and that would lead to layout disturbance in our page , thats why CSS does not rounds border of any element after element's half size.
+            </p>
+            <br>
+            <p>An elemnt can be circular or elleptical at maximum. Increasing the border-radius value past its half size would bring no change to its shape. Check it out below , play around with different values.
+            </p>
+        </div>
+
+
+        <div class="playgroundVer">
+
+            <div class="split">
+                <div class="box dynamic" v-bind:style="{borderRadius:roundness400+'px',height:dyHeight+'px',width:dyWidth+'px'}">{{dyWidth}}x{{dyHeight}}
+
+                    <div class="guideCircles top_left" v-bind:style="guideCircles400" v-if="visible">
+                        <div class="radius radVer"></div>
+                        <div class="radius radHor"></div>
+                    </div>
+
+                    <div class="guideCircles top_right" v-bind:style="guideCircles400" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_right" v-bind:style="guideCircles400" v-if="visible"></div>
+
+                    <div class="guideCircles bottom_left" v-bind:style="guideCircles400" v-if="visible"></div>
+
+                </div>
+
+
+            </div>
+
+            <div class="split">
+
+                <div class="panel">
+
+                    <div class="code">
+                        <p>border-radius: {{roundness400}}px;</p>
+                    </div>
+
+                    <button @click="visible = !visible" class="guideButton">
+                        <p v-if="visible">Hide</p>
+                        <p v-if="!visible">Show</p>
+                        <p>Circles</p>
+                    </button>
+
+                </div>
+
+                <div class="sliderRow">
+                    <P>Width</P>
+                    <div class="slider_cont">
+                        <p>0</p>
+                        <input class="slider" type="range" min="0" v-model="dyWidth" max="300">
+                        <p>300</p>
+                    </div>
+                </div>
+                <div class="sliderRow">
+                    <P>Height</P>
+                    <div class="slider_cont">
+                        <p>0</p>
+                        <input class="slider" type="range" min="0" v-model="dyHeight" max="200">
+                        <p>200</p>
+                    </div>
+                </div>
+                <div class="sliderRow">
+                    <P>Border-radius</P>
+                    <div class="slider_cont">
+                        <p>0</p>
+                        <input class="slider" type="range" min="0" v-model="roundness400" max="400">
+                        <p>400</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
         <footer>
             Work in progress
         </footer>
+
 
     </div>
 
