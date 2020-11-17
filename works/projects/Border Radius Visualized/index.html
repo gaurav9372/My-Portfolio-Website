@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?
@@ -11,7 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Border-radius</title>
+    <title>Border-radius Visualized</title>
 </head>
 
 <body>
@@ -88,7 +89,7 @@
 
         <div class="texts">
 
-            <p>we can easily make its corners rounded by applying the border-radius css property. Lets have rounded corners of 20px.</p>
+            <p>We can easily make its corners rounded by applying the border-radius css property. Lets have rounded corners of 20px.</p>
 
         </div>
 
@@ -116,7 +117,7 @@
 
         <div class="texts">
 
-            <p>easy , isnt it ? But now the real quetions is...</p>
+            <p>Easy , isnt it ? But now the  quetions is...</p>
 
         </div>
 
@@ -133,7 +134,7 @@
                 <p class="answer">
                     Well, we know that css follows Box Model , which means everything in css has a box around it. Even when we can not see it. (You can always check its border with the border css property).
 
-                    When we set border-radius property to an element , Its all four corners are rounded with reference to the four assigned invisible circles with radius equal to the value or values which we put in border-radius property.
+                    When we set border-radius property to an element , Its all four corners are rounded with reference to the four assigned invisible circles with radius equal to the value which we put in border-radius property.
                 </p>
 
             </div>
@@ -145,16 +146,21 @@
         
         <div class="texts">
 
-            <p>Lets see it in working. Hers’s another div with height and width equal to <b>200px</b>. See how border-radius rounds the corners of div with reference to four circles.So the value which we write in border-radius property is actually the radius of these circles which guide the roundenss.</p>
+            <p>Lets see it in working. Hers’s another div with height and width equal to <b>200px</b>. See how border-radius rounds the corners of div with reference to four circles.So the value which we write in border-radius property is actually the radius of these circles(Blue line) which guide the roundenss.</p>
 
         </div>
         
  <div class="playgroundVer">
 
             <div class="split">
-                <div class="box b200" v-bind:style="{borderRadius:roundness50+'px'}">
+                <div class="box b200" v-bind:style="{borderRadius:roundness50+'px'}"> 200x200
 
-                <div class="guideCircles top_left" v-bind:style="guideCircles50" v-if="visible"></div>
+                <div class="guideCircles top_left" v-bind:style="guideCircles50" v-if="visible">
+                    
+        <div class="radius radVer"></div>
+        <div class="radius radHor"></div>
+                    
+                </div>
                     
                 <div class="guideCircles top_right" v-bind:style="guideCircles50" v-if="visible"></div>
                     
@@ -226,9 +232,12 @@ We used px (pixels) for applying value. We can also write the value in em , rem 
          <div class="playgroundVer">
 
             <div class="split">
-                <div class="box b200" v-bind:style="{borderRadius:roundness100+'px'}">
+                <div class="box b200" v-bind:style="{borderRadius:roundness100+'px'}">200x200
 
-                <div class="guideCircles top_left" v-bind:style="guideCircles100" v-if="visible"></div>
+                <div class="guideCircles top_left" v-bind:style="guideCircles100" v-if="visible">
+                    <div class="radius radVer"></div>
+        <div class="radius radHor"></div>
+                    </div>
                     
                 <div class="guideCircles top_right" v-bind:style="guideCircles100" v-if="visible"></div>
                     
@@ -272,7 +281,7 @@ We used px (pixels) for applying value. We can also write the value in em , rem 
         
         <div class="texts">
         <p>
-                    We are getting a circle. so now we know that to make a circle are supposed to have a square element and set its border radius equal to half the width of it or we can simply write bordr-radius : 50% if we dont want to calculate the half wodth of any element. 
+                    We are getting a circle. so now we know that to make a circle we are supposed to have a square element and set its border radius equal to half its width or we can simply write <b>border-radius : 50%</b> if we dont want to calculate half width of it. 
                 </p>
         </div>
         
