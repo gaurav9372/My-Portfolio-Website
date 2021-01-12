@@ -1,0 +1,229 @@
+:root{
+    --accColor:#F88762;
+}
+
+*{
+box-sizing: border-box;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button{
+    padding: 0px;
+    margin: 0px;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 100%;
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    font-size: 2em;
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen{
+    display: none;
+    height: calc(100vh - 80px);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.screen.active{
+    display: flex;
+}
+
+.firstScreen{
+    background-color: #8014dc;
+}
+
+.secondScreen{
+    background-color: #0cd4cd;
+}
+
+.thirdScreen{
+    background-color: #d4610c;
+}
+.fourthScreen{
+    background-color: #f0f0f0;
+}
+
+p{
+   margin: 2px 0px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    border-radius: 4px;
+    
+    font-size: 1em;
+    margin: 30px 0px 0px 0px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+button:focus{
+    outline: 0px;
+}
+button:hover{
+    outline: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+input:focus{
+    outline: 0px;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,1);
+}
+
+input{
+    font-size: 1em;
+}
+
+
+
+.card{
+    padding: 20px;
+    color: #fff;
+    background-color: crimson;
+    border-radius: 10px; 
+}
+
+.bluecard{
+    padding: 20px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px; 
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: crimson;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.item p{
+    color: #fff;
+}
+
+.pName{
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #b71536;
+}
+
+.pPrice{
+    font-size: 1.3em;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+#counter{
+    font-size: 2em;
+    background-color: #000;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+ 
+
+.data{
+    display: none;
+}
+
+/*Main*/
+
+form{
+    display: flex;
+    width: 80%;
+    background-color: rgba(0,0,0,0.4);
+    padding:20px 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0px 0px;
+    box-shadow: 20px 40px 50px 0px rgba(0,0,0,0.25); 
+}
+
+.result{
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    padding:50px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0px 0px;
+    box-shadow: 20px 40px 50px 0px rgba(0,0,0,0.25); 
+}
+
+form p{
+    color: #fff;
+    font-size: 0.9em;
+/*    font-weight: bold;*/
+}
+
+.requestText{
+    font-size: 1.5em;
+    margin: 0px 0px 30px;
+}
+
+form input{
+   height: 40px;
+    border:0px;
+    font-size: 1em;
+    border-radius: 4px;
+    margin:0px 0px;
+    padding: 0px 10px;
+}
+
+.BMIresult{
+   font-size: 2em;  
+/*    color: red;*/
+    font-weight: 500;
+}
+
+@media all and (min-width: 600px){
+}
+
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}
+
+
+
