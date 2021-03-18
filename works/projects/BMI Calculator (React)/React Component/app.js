@@ -13,7 +13,7 @@ class App extends React.Component {
         
         firstScreen:"screen active firstScreen",
         secondScreen:"screen secondScreen",
-        thirdScreen:"screen thirdScreen",
+        thirdScreen:"screen  thirdScreen",
         fourthScreen:"screen fourthScreen",
 
     }
@@ -127,25 +127,64 @@ class App extends React.Component {
     <p className = "requestText" >
     Enter your weight <br/>(in kg) </p>
 
-
     <input type="text" onChange={this.getWeight}/>
 
     <button > Submit </button>
     </form>
     
-</div>   
+</div>
                     
-    
 <div className={this.state.thirdScreen}>
                 
     <form onSubmit={this.thirdScreenComp}>
                     
         <p>Good , now</p>
-        <p className="requestText"> Enter your height <br/>(in cm)</p>
+        <p className="requestText"> Enter your height </p>
+            
+        <div className="row">
+            .
+        ...
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <input type="text" onChange={this.getHeight} placeholder="5.2"></input>
                     
-            <input type="text" onChange={this.getHeight}></input>
-                    
-            <button>Submit</button>
+        <select className="heightDropDown">
+        <option>foot </option>
+        <option>cm</option>
+        </select>
+        
+        </div>
+        
+        <button>Submit</button>
                 
     </form>
                 

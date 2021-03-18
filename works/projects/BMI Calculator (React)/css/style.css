@@ -208,6 +208,26 @@ form input{
     border-radius: 4px;
     margin:0px 0px;
     padding: 0px 10px;
+    width: 100%;
+}
+
+select{
+    height: 40px;
+    width: 90px;
+    border:0px;
+    font-size: 1em;
+    border-radius: 4px;
+    background-color: #ffb47d;
+    margin-left:10px;
+    padding: 0px 5px;
+    font-family: "poppins",sans-serif;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .BMIresult{
