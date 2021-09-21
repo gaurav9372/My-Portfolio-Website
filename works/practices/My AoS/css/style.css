@@ -1,0 +1,65 @@
+/*Resetting*/
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    font-size: 1em;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button{
+    padding: 0px;
+    margin: 0px;
+}
+
+input{
+    font-size: 1em;
+}
+
+
+/*Main*/
+
+#fullscreen{
+    display: flex;
+       justify-content: center;
+     align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+
+}
+
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}
+
+
+

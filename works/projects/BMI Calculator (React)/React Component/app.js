@@ -92,9 +92,7 @@ class App extends React.Component {
             <section className="frame">
             
 
-          <div className="header">
-            BMI Calculator
-            </div> 
+         
                 
            
             <div className={this.state.firstScreen}>

@@ -1,0 +1,182 @@
+/*Resetting*/
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    font-size: 1em;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button{
+    padding: 0px;
+    margin: 0px;
+}
+
+input{
+    font-size: 1em;
+}
+
+/*Main*/
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    opacity: 1;
+}
+
+.loader p{
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0.1; 
+    animation: blinking 1s linear infinite forwards;
+}
+@keyframes blinking{
+    0%{
+    
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+       
+    }
+}
+
+
+.loader.hideIt{
+    animation: hideIt 1s linear forwards;
+}
+
+@keyframes hideIt{
+    100%{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+section{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    background-color: green;
+}
+
+
+.blocks{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+.blocks:nth-child(2n){
+    background-color: crimson;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+   
+    
+    
+}
+
+.slideshow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slideshow img{
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .square-rotate {
+        animation:
+            rotor ease-in 1s forwards;
+    }
+    .moveUp{
+        animation:
+        moveUp ease-in 1s forwards;
+    }
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+@keyframes rotor {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+    100%{
+    }
+}
+
+@keyframes moveUp{
+	0% {
+		opacity: 0;
+        transform: translateY(200px);
+	}
+	100% {
+		opacity: 1;
+        transform: translateY(0px);
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+
+}
+
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}
+
+
+
