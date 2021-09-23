@@ -5,6 +5,7 @@
     --lightBGColor: #383D45 ;
     --lightBGColorHover: #32373F ;
     --greyColor:#E0E0E0;
+    --captionTextColor: #BDBDBD;
     --accentColor: #FFEB3B ;
     --staatliches: 'Staatliches', cursive;
     --rubik: 'Rubik', sans-serif;
@@ -183,7 +184,7 @@ padding: 16px;
 
 background:var(--lightBGColor);
 box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.12);
-border-radius: 12px;
+border-radius: 16px;
 }
 
 
@@ -200,7 +201,7 @@ align-items: center;
 overflow: hidden;
 
 filter: drop-shadow(12px 12px 32px rgba(0, 0, 0, 0.48));
-border-radius: 4px;
+border-radius: 8px;
 
 }
 
@@ -214,7 +215,7 @@ border-radius: 4px;
 
     font-family: var(--rubik);
 font-weight: 400;
-font-size: 14px;
+font-size: 16px;
 line-height: 160%;
 letter-spacing: -0.01em;
 margin: 20px 0px;
@@ -223,35 +224,34 @@ color: #fff;
 
 .pcaption{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .pcaption .pDate
 {
     font-family: var(--staatliches);
-    font-size: 10px;
+    font-size: 12px;
     line-height: 100%;
     letter-spacing: 0.08em;
     color: var(--accentColor);
     text-transform: uppercase;
 }
-.pcaption .pdivider{
-    
-    height: 100%;
-    width: 2px;
+.pcaption .pDivider{
+    height: 10px;
+    width: 1px;
     margin: 0px 8px;
-    background-color: var(--greyColor);
+    background-color: var(--captionTextColor);
 }
 
 
 .pcaption .pCategory
 {
     font-family: var(--staatliches);
-    font-size: 10px;
+    font-size: 12px;
     line-height: 100%;
     letter-spacing: 0.08em;
-    color: var(--greyColor);
+    color: var(--captionTextColor);
     text-transform: uppercase;
 }
 
