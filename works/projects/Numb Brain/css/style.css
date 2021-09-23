@@ -6,13 +6,19 @@
     --lightBGColorHover: #32373F ;
     --greyColor:#E0E0E0;
     --accentColor: #FFEB3B ;
-  }
-
+}
 
 /*Resetting*/
 
 *{
 box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-size: 1em;
 }
 
 button{
@@ -26,40 +32,121 @@ align-items: center;
 border:0px;
 }
 
-body{
-    font-family: "Rubik", sans-serif;
-    font-size: 1em;
-}
-
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,button{
-    padding: 0px;
-    margin: 0px;
-}
 
 input{
     font-size: 1em;
 }
 
-
 /*Main*/
+
 body{
     display: flex;
     flex-direction: column;
     background-color: var(--darkBGColor);
 }
 
-.postsSection{
+/*sections*/
+
+section{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
     width: 100%;
+}
+
+.headingSection{
+    background: linear-gradient(rgba(26, 28, 32, 0.7),rgba(26, 28, 32, 0.7)),url("../resources/images/trending.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.postsSection{
+    
     height: 400px;
     color: #fff;
     padding: 0px 20px 20px;
     background-color: transparent;
 }
 
+/*Navbar*/
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+}
+nav .navCont{
+    width: 100%;
+    height: 66px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 12px 12px 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lightBGColor);
+}
+.logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navButtons{
+    display: flex;
+    height: 100%;
+}
+.navButtons button{
+    height: 100%;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.navButtons button:hover{
+    background-color: var(--lightBGColorHover);
+}
+
+/*heading section > trendingArticle*/
+
+.trendingArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    padding: 52px;
+}
+.trendingArticle h2{
+width: 100%;
+font-weight: 500;
+font-size: 20px;
+text-align:center;
+line-height: 140%;
+color: #FFFFFF;
+}
+.trendingArticle button{
+    height: 44px;
+    width: 110px;
+    margin-top: 36px;
+    font-weight: 600;
+    background-color: var(--accentColor);
+    border-radius: 48px;
+}
+.trendingArticle button:hover{
+    background-color: var(--accentColor);
+}
+
+/*Posts Section*/
 .sectionName{
     height: 100px;
     display: flex;
@@ -73,98 +160,13 @@ text-transform: uppercase;
 color: var(--greyColor);
 }
 
-.headingSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    
-    background: linear-gradient(rgba(26, 28, 32, 0.7),rgba(26, 28, 32, 0.7)),url("../resources/images/trending.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-nav{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 104px;
-    width: 100%;
-    padding: 16px;
-}
-
-nav .navCont{
-    width: 100%;
-    height: 100%;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    padding: 16px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--lightBGColor);
-}
-
-.navCont .logo{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navButtons{
-    display: flex;
-    height: 100%;
-}
-
-.navButtons button{
-    height: 100%;
-    width: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 4px;
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-.navButtons button:hover{
-    background-color: var(--lightBGColorHover);
-}
 
 
 
-.trendingArticle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 360px;
-    padding: 52px;
-}
 
-.trendingArticle h2{
-width: 100%;
-font-weight: 500;
-font-size: 20px;
-text-align:center;
-line-height: 140%;
-color: #FFFFFF;
-}
 
-.trendingArticle button{
-    height: 44px;
-    width: 110px;
-    margin-top: 36px;
-    font-weight: 600;
-    background-color: var(--accentColor);
-    border-radius: 48px;
-}
-.trendingArticle button:hover{
-    background-color: var(--accentColor);
-}
+
+
 
 
 
