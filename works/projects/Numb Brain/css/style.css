@@ -181,7 +181,7 @@ color: #FFFFFF;
 justify-content: center;
 align-items: flex-start;
 padding: 16px;
-
+margin-bottom: 20px;
 background:var(--lightBGColor);
 box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.12);
 border-radius: 16px;
@@ -243,7 +243,6 @@ color: #fff;
     margin: 0px 8px;
     background-color: var(--captionTextColor);
 }
-
 
 .pcaption .pCategory
 {
